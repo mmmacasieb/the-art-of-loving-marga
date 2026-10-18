@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The ART of loving MARGA</title>
+<meta name="theme-color" content="#0a1431">
+<link rel="icon" href="assets/file-1-a44c41.png">
+<meta name="description" content="Artfol & Margarette — December 28, 2026">
+<style>@font-face{font-family:'Cinzel';font-style:normal;font-weight:400 900;font-display:swap;src:url(assets/file-2-01c064.woff2) format('woff2')}
+@font-face{font-family:'Cinzel Decorative';font-style:normal;font-weight:400;font-display:swap;src:url(assets/file-3-c62087.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300 700;font-display:swap;src:url(assets/file-4-5a0fdd.woff2) format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:300 700;font-display:swap;src:url(assets/file-5-01a8c6.woff2) format('woff2')}
+@font-face{font-family:'Pinyon Script';font-style:normal;font-weight:400;font-display:swap;src:url(assets/file-6-917f65.woff2) format('woff2')}
+:root{--frame:url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%27100%27%20height=%27100%27%20viewBox=%270%200%20100%20100%27%3E%3Cpath%20d=%27M25.30%201.30H74.70A24%2024%200%200%200%2098.70%2025.30V74.70A24%2024%200%200%200%2074.70%2098.70H25.30A24%2024%200%200%200%201.30%2074.70V25.30A24%2024%200%200%200%2025.30%201.30Z%27%20fill=%27%23f8f1e6%27%20stroke=%27%235b1323%27%20stroke-width=%272.6%27/%3E%3Cpath%20d=%27M29.01%205.30H70.99A28.0%2028.0%200%200%200%2094.70%2029.01V70.99A28.0%2028.0%200%200%200%2070.99%2094.70H29.01A28.0%2028.0%200%200%200%205.30%2070.99V29.01A28.0%2028.0%200%200%200%2029.01%205.30Z%27%20fill=%27none%27%20stroke=%27%23b98a5e%27%20stroke-width=%27.7%27/%3E%3C/svg%3E")}
+:root{
+  --navy:#0a1431; --navy2:#13245a; --wine:#5b1323; --wine2:#7d2336; --cream:#f8f1e6; --ink:#3b1019; --muted:#7a625c;
+  --gold:#b98a5e; --copper:#b98a5e; --gold2:#e3c295;
+  --disp:'Cinzel Decorative','Cinzel',Georgia,serif; --cap:'Cinzel',Georgia,serif; --body:'Cormorant Garamond',Georgia,serif; --script:'Pinyon Script','Cormorant Garamond',cursive;
+  --ease:cubic-bezier(.22,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:#0a1431;color:var(--cream);font-family:var(--body);font-weight:500;font-size:20px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden;height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(120% 80% at 10% -10%,rgba(60,92,180,.38),transparent 62%),
+  radial-gradient(100% 70% at 100% 105%,rgba(44,70,150,.40),transparent 62%),
+  linear-gradient(180deg,#0c193d,#0a1331 55%,#070e26)}
+body::after{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;background:
+  linear-gradient(112deg,transparent 36%,rgba(92,124,214,.10) 44%,rgba(92,124,214,.03) 50%,transparent 58%),
+  linear-gradient(112deg,transparent 62%,rgba(92,124,214,.07) 70%,transparent 78%);animation:drift 28s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate3d(-3%,0,0)}to{transform:translate3d(3%,0,0)}}
+a{color:inherit}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+main,.sec{position:relative;z-index:1}
+
+/* corner florals (cut from the plate photo) */
+.amb{position:fixed;z-index:0;pointer-events:none;background-size:cover;background-position:center;opacity:0;transition:opacity 2.4s 1s ease}
+body.opened .amb{opacity:.8}
+body.opened.on-invite .amb{opacity:0}
+.amb.tl{left:0;top:0;width:min(30vw,340px);aspect-ratio:215/240;-webkit-mask-image:radial-gradient(circle at 0 0,#000 30%,transparent 72%);mask-image:radial-gradient(circle at 0 0,#000 30%,transparent 72%)}
+.amb.br{right:0;bottom:0;width:min(32vw,370px);aspect-ratio:234/262;-webkit-mask-image:radial-gradient(circle at 100% 100%,#000 30%,transparent 72%);mask-image:radial-gradient(circle at 100% 100%,#000 30%,transparent 72%)}
+@media(max-width:700px){body.opened .amb{opacity:.6}}
+
+/* ---------- COVER ---------- */
+#cover{position:fixed;inset:0;z-index:800;display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden;
+  background:radial-gradient(90% 70% at 50% 45%,#17295f 0,#0b1636 55%,#070e24 100%);
+  transition:opacity 1.2s ease,transform 1.4s cubic-bezier(.7,0,.2,1),filter 1.2s}
+#cover.go{opacity:0;transform:scale(1.16);filter:blur(8px);pointer-events:none}
+.cover-in{width:100%;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3.4vh,34px)}
+.site-title{font-family:var(--disp);font-weight:400;font-size:clamp(19px,3.6vw,34px);letter-spacing:.14em;color:#efe2d0;text-align:center;line-height:1.3;animation:fadeIn 1.6s .2s var(--ease) both}
+.site-title b{font-weight:400;background:linear-gradient(180deg,#f6dcb8,#c38e66);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:#e3c295}
+.site-title::after{content:"";display:block;width:64px;height:1px;background:var(--gold);margin:16px auto 0;opacity:.8}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.pwrap{position:relative;width:min(96vw,1060px,calc((100vh - 210px)*2));animation:plateIn 2.2s .5s var(--ease) both}
+@keyframes plateIn{from{opacity:0;transform:scale(1.045)}to{opacity:1;transform:none}}
+.pimg{display:block;width:100%;height:auto;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent),linear-gradient(0deg,transparent,#000 12%,#000 88%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent),linear-gradient(0deg,transparent,#000 12%,#000 88%,transparent);mask-composite:intersect}
+.hot{position:absolute;transform:translate(-50%,-50%);aspect-ratio:1;border-radius:50%;border:1px solid rgba(240,214,170,.85);background:transparent;cursor:pointer;padding:0;
+  animation:breathe 3.2s 2.4s ease-in-out infinite;transition:transform .6s var(--ease),border-color .4s}
+.hot:hover{transform:translate(-50%,-50%) scale(1.06);border-color:#fff}
+@keyframes breathe{0%,100%{box-shadow:0 0 0 0 rgba(240,214,170,.55)}60%{box-shadow:0 0 0 clamp(10px,2.2vw,22px) rgba(240,214,170,0)}}
+.cover-hint{font-family:var(--cap);font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:#d8c4a8;text-align:center;animation:fadeIn 1.6s 2s var(--ease) both}
+
+/* ---------- NAV ---------- */
+#prog{position:fixed;top:0;left:0;right:0;height:2px;z-index:320;background:linear-gradient(90deg,var(--gold),#f0d3a8);transform:scaleX(0);transform-origin:0 50%}
+#nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;justify-content:flex-start;gap:clamp(0px,1.6vw,22px);padding:14px 12px 26px;
+  background:linear-gradient(#0a1431f0 35%,#0a143100);transform:translateY(-110%);opacity:0;transition:transform 1s .5s var(--ease),opacity 1s .5s;overflow-x:auto;scrollbar-width:none}
+#nav::-webkit-scrollbar{display:none}
+#nav a:first-child{margin-left:auto}#nav a:last-child{margin-right:auto}
+body.opened #nav{transform:none;opacity:1}
+#nav a{position:relative;font-family:var(--cap);font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;color:rgba(241,226,205,.72);padding:6px 9px;white-space:nowrap;transition:color .4s}
+#nav a::after{content:"";position:absolute;left:9px;right:9px;bottom:0;height:1px;background:var(--gold2);transform:scaleX(0);transition:transform .5s var(--ease)}
+#nav a:hover,#nav a.on{color:#fff}
+#nav a:hover::after,#nav a.on::after{transform:scaleX(1)}
+
+/* ---------- SECTIONS & FRAME ---------- */
+main{opacity:0;transition:opacity 1.2s .5s}
+body.opened main{opacity:1}
+.sec{padding:clamp(80px,11vh,118px) 16px 18px;display:flex;justify-content:center}
+.wrap{position:relative;width:min(100%,760px)}
+.card{--bw:40px;position:relative;border:var(--bw) solid transparent;border-image:var(--frame) 40 fill/var(--bw)/0 stretch;
+  padding:clamp(20px,5vw,46px) clamp(6px,4vw,42px) clamp(26px,5vw,52px);text-align:center;color:var(--ink);
+  filter:drop-shadow(0 28px 34px rgba(0,0,0,.5)) drop-shadow(0 3px 4px rgba(0,0,0,.35))}
+@media(max-width:640px){.card{--bw:26px}}
+.card.rv{transform:translateY(34px) scale(.985)}
+.card.rv.in{transform:none}
+.card>*{opacity:0;transform:translateY(12px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.card.in>*{opacity:1;transform:none}
+.card.in>*:nth-child(1){transition-delay:.3s}.card.in>*:nth-child(2){transition-delay:.4s}.card.in>*:nth-child(3){transition-delay:.5s}
+.card.in>*:nth-child(4){transition-delay:.6s}.card.in>*:nth-child(5){transition-delay:.7s}.card.in>*:nth-child(6){transition-delay:.8s}
+.card.in>*:nth-child(n+7){transition-delay:.9s}
+
+.title{font-family:var(--disp);font-weight:400;color:var(--wine);font-size:clamp(30px,6.2vw,50px);letter-spacing:.05em;line-height:1.1}
+.sub{font-family:var(--script);font-size:clamp(26px,4.6vw,34px);color:var(--wine2);margin-top:8px;line-height:1.1}
+.orn{display:block;width:min(100%,230px);height:14px;margin:26px auto;color:var(--gold);overflow:visible}
+.cap{font-family:var(--cap);font-weight:400;text-transform:uppercase;letter-spacing:.16em;font-size:clamp(12.5px,2.6vw,15.5px);line-height:1.8}
+.cap.sm{font-size:clamp(12px,2.4vw,14.5px);letter-spacing:.14em}
+.nm{font-family:var(--disp);font-weight:400;color:var(--wine);font-size:clamp(22px,5.4vw,42px);line-height:1.2;letter-spacing:.02em}
+.and{font-family:var(--cap);letter-spacing:.3em;margin:8px 0;font-size:16px;font-weight:400}
+.info3{display:flex;justify-content:center;align-items:stretch;margin:6px 0}
+.info3>div{flex:1;padding:6px 10px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.info3>div+div{border-left:1px solid rgba(185,138,94,.7)}
+.info3 svg{width:40px;height:40px;color:var(--wine)}
+.info3 .cap{font-size:clamp(11px,2.2vw,14px)}
+.recep{display:flex;justify-content:center;align-items:center;gap:16px;text-align:left}
+.recep svg{width:36px;height:40px;color:var(--wine);flex:none}
+.recep b{font-family:var(--cap);font-weight:500;letter-spacing:.14em;font-size:14px;display:block}
+.recep span{font-family:var(--cap);letter-spacing:.1em;font-size:14px}
+.quote{font-family:var(--cap);font-weight:400;letter-spacing:.14em;text-transform:uppercase;font-size:clamp(12.5px,2.5vw,15px)}
+.quote small{display:block;font-size:11.5px;margin-top:6px;letter-spacing:.14em;color:var(--muted)}
+.cornertxt{position:absolute;font-family:var(--cap);text-transform:uppercase;letter-spacing:.3em;font-size:10px;color:#b9bfd6;line-height:2}
+.cornertxt.tr{right:-150px;top:0;text-align:center}.cornertxt.bl{left:-150px;bottom:0}
+@media(max-width:1180px){.cornertxt{display:none}}
+
+/* invitation picture + live countdown */
+.inv-img{position:relative;width:min(100%,700px);margin:0 auto;container-type:inline-size}
+.inv-img>img{width:100%;display:block;
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 6%,#000 94%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 3%,#000 97%,transparent 100%);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to right,transparent 0,#000 6%,#000 94%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 3%,#000 97%,transparent 100%);mask-composite:intersect}
+.cdov{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--wine);overflow:hidden}
+.cdov .cl{font-family:var(--script);font-size:4.5cqw;line-height:1.05;color:var(--wine2)}
+.cdov .ch{font-family:var(--disp);font-weight:400;font-size:11cqw;line-height:1.05;letter-spacing:.03em}
+.cdov .chs{font-family:var(--cap);font-size:1.5cqw;letter-spacing:.55em;text-transform:uppercase;color:var(--muted);margin-top:.4cqw}
+.cdov .cr{font-family:var(--cap);font-size:2cqw;margin-top:1.4cqw;display:flex;gap:2.6cqw;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.cdov .cr b{font-weight:500;color:var(--wine);font-size:2.7cqw;margin-right:.3cqw}
+.cdov .cd-done{font-family:var(--script);font-size:8cqw;color:var(--wine)}
+.cdbox{margin:30px 6px 6px;padding:26px 14px}
+.cd-label{font-family:var(--script);font-size:clamp(25px,5vw,34px);color:var(--wine2);line-height:1.1}
+.cd-hours{font-family:var(--disp);font-size:clamp(44px,12vw,86px);color:var(--wine);line-height:1.1}
+.cd-hours-s{font-family:var(--cap);letter-spacing:.5em;text-transform:uppercase;font-size:11px;color:var(--muted)}
+.cd-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:20px auto 0;max-width:460px}
+.cd-tiles div{border-top:1px solid var(--gold);padding-top:8px}
+.cd-tiles b{display:block;font-family:var(--cap);font-weight:500;font-size:clamp(20px,5vw,28px);color:var(--wine)}
+.cd-tiles span{font-family:var(--cap);font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
+.cd-done{font-family:var(--script);font-size:44px;color:var(--wine)}
+
+/* buttons */
+.btn{display:inline-block;background:var(--wine);color:#f6e8dc;border:1px solid var(--wine);border-radius:0;padding:13px 30px;font-family:var(--cap);font-weight:500;letter-spacing:.26em;text-transform:uppercase;font-size:11px;cursor:pointer;text-decoration:none;transition:background .4s,color .4s,letter-spacing .5s var(--ease),transform .4s}
+.btn:hover{background:transparent;color:var(--wine);letter-spacing:.32em}
+.btn.dis{background:transparent;border-color:rgba(122,98,92,.5);color:var(--muted);cursor:default;pointer-events:none;letter-spacing:.2em}
+.btn.ghost{background:transparent;color:var(--wine)}
+.btn.ghost:hover{background:var(--wine);color:#f6e8dc}
+.btn:disabled{opacity:.6;cursor:wait}
+
+/* venue */
+.venues{display:grid;grid-template-columns:1fr 1fr;gap:34px 30px;margin-top:8px;text-align:center}
+@media(max-width:700px){.venues{grid-template-columns:1fr}}
+.vcard{display:flex;flex-direction:column;align-items:center;gap:10px}
+.vimg{width:calc(100% - 12px);aspect-ratio:4/3;object-fit:cover;background:linear-gradient(135deg,#f1e6d4,#e3d1b6);border:0;outline:1px solid var(--gold);outline-offset:6px;display:flex;align-items:center;justify-content:center;color:#bfa586;overflow:hidden;margin:6px 0 8px}
+.vimg svg{width:54px;height:54px}
+.vt{font-family:var(--cap);font-weight:400;letter-spacing:.3em;text-transform:uppercase;font-size:11.5px;color:var(--muted)}
+.vn{font-family:var(--disp);font-size:clamp(20px,3.6vw,25px);color:var(--wine);line-height:1.2}
+.va{font-size:19px;margin-bottom:6px}
+.vmap{width:min(100%,250px);border:1px solid var(--gold);padding:4px;background:#fff;display:block}
+
+/* entourage */
+.ent{display:grid;grid-template-columns:1fr 1fr;gap:40px 26px;margin-top:6px}
+.ent .g.full{grid-column:1/-1}
+@media(max-width:560px){.ent{grid-template-columns:1fr}}
+.ent h3{font-family:var(--cap);font-weight:500;color:var(--wine);font-size:clamp(12.5px,2.4vw,14px);letter-spacing:.3em;text-transform:uppercase;margin-bottom:16px}
+.ent h3::after{content:"";display:block;width:30px;height:1px;background:var(--gold);margin:11px auto 0}
+.ent p{font-size:clamp(19px,3.2vw,21.5px);line-height:1.65}
+.ent .g.full .nl{display:grid;grid-template-columns:1fr 1fr;gap:0 26px;max-width:560px;margin:0 auto}
+@media(max-width:480px){.ent .g.full .nl{grid-template-columns:1fr}}
+
+/* dress code */
+.dimgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:26px;margin:30px 0}
+.dimg{display:flex;flex-direction:column;gap:10px;align-items:center}
+.dimg .vimg{aspect-ratio:3/4;margin:6px 6px 4px}
+.dimg span{font-family:var(--cap);letter-spacing:.26em;text-transform:uppercase;font-size:11px;color:var(--muted)}
+.swatches{display:flex;flex-wrap:wrap;justify-content:center;gap:26px 22px;margin:30px 0 8px}
+.sw{display:flex;flex-direction:column;align-items:center;gap:14px;width:92px}
+.sw i{width:58px;height:58px;border-radius:50%;display:block;box-shadow:0 0 0 4px var(--cream),0 0 0 5px var(--gold),0 10px 16px -6px rgba(0,0,0,.4),inset 0 -8px 14px rgba(0,0,0,.18),inset 0 6px 10px rgba(255,255,255,.18);transition:transform .6s var(--ease)}
+.sw:hover i{transform:translateY(-4px)}
+.sw span{font-family:var(--cap);letter-spacing:.18em;text-transform:uppercase;font-size:10.5px;line-height:1.5;color:var(--ink)}
+.dnote{font-family:var(--script);font-size:30px;color:var(--wine2);margin-top:12px}
+.gift{margin:34px auto 0;padding:30px 34px;background:var(--wine);color:#f1dfd0;font-size:clamp(19px,3.2vw,21px);font-style:italic;line-height:1.7;outline:1px solid rgba(227,194,149,.6);outline-offset:-8px}
+
+/* RSVP */
+.rform{max-width:460px;margin:30px auto 0;text-align:left;display:flex;flex-direction:column;gap:22px}
+.rform label.f{display:flex;flex-direction:column;gap:2px}
+.rform label.f span,.lbl{font-family:var(--cap);font-weight:400;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.rform input[type=text],.rform input[type=email]{border:0;border-bottom:1px solid var(--gold);background:transparent;font-family:var(--body);font-weight:500;font-size:22px;padding:8px 2px;color:var(--ink);outline:none;border-radius:0;transition:border-color .4s,box-shadow .4s}
+.rform input::placeholder{color:#b3a39b;font-style:italic}
+.rform input:focus{border-color:var(--wine);box-shadow:0 1px 0 var(--wine)}
+.pills{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.pills label{cursor:pointer;position:relative}
+.pills input{position:absolute;opacity:0}
+.pills span{display:block;text-align:center;border:1px solid var(--gold);padding:14px 8px;font-family:var(--cap);font-weight:400;font-size:11px;letter-spacing:.2em;text-transform:uppercase;transition:background .4s,color .4s,border-color .4s;color:var(--ink)}
+.pills label:hover span{border-color:var(--wine)}
+.pills input:checked+span{background:var(--wine);border-color:var(--wine);color:#f6e8dc}
+.pills input:focus-visible+span{outline:2px solid var(--gold2);outline-offset:3px}
+.rform .btn{margin-top:4px;padding:16px;width:100%}
+.err{color:#9c1c2a;font-size:17px;min-height:22px}
+.deadline{margin-top:24px;font-style:italic;color:var(--muted);font-size:19px}
+
+/* FAQ */
+.faq{margin-top:8px;display:flex;flex-direction:column;text-align:left}
+.faq>div{padding:24px 6px;border-top:1px solid rgba(185,138,94,.6)}
+.faq>div:last-child{border-bottom:1px solid rgba(185,138,94,.6)}
+.faq h4{font-family:var(--cap);font-weight:500;letter-spacing:.14em;font-size:14px;text-transform:uppercase;color:var(--wine);margin-bottom:8px;line-height:1.5}
+.faq p{font-size:20px}
+.faq a.lk{display:inline-block;margin-top:12px;font-family:var(--cap);font-weight:400;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--wine2);border-bottom:1px solid var(--gold);text-decoration:none;padding-bottom:3px;cursor:pointer;transition:letter-spacing .5s var(--ease),color .3s}
+.faq a.lk:hover{color:var(--wine);letter-spacing:.34em}
+
+/* closing */
+.sweet{font-size:clamp(21px,3.6vw,25px);font-style:italic;line-height:1.75;margin:4px auto;max-width:560px}
+.sign{font-family:var(--script);font-size:clamp(44px,8vw,58px);color:var(--wine);line-height:1.2}
+.sealimg{width:92px;display:block;margin:0 auto 10px;filter:drop-shadow(0 5px 8px rgba(0,0,0,.35))}
+footer{text-align:center;padding:44px 16px 120px;font-family:var(--cap);font-size:10.5px;letter-spacing:.4em;text-transform:uppercase;color:#8d99c0}
+
+/* reveal fallback */
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1.2s var(--ease),transform 1.2s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv,.card>*,.card.rv{opacity:1!important;transform:none!important}
+  html{scroll-behavior:auto}
+}
+
+/* admin monogram */
+#monoBtn{position:fixed;right:16px;bottom:16px;z-index:850;width:62px;height:60px;border:0;cursor:pointer;background:transparent center/contain no-repeat;font-size:0;color:transparent;border-radius:50%;filter:drop-shadow(0 8px 12px rgba(0,0,0,.55));transition:transform .5s var(--ease),opacity .4s;opacity:.9}
+#monoBtn:hover{transform:scale(1.1) rotate(-5deg);opacity:1}
+
+/* modal */
+#modal{position:fixed;inset:0;z-index:1200;background:rgba(6,12,32,.78);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:16px;overflow:auto}
+#modal.show{display:flex;animation:fade .3s}
+@keyframes fade{from{opacity:0}}
+.mbox{position:relative;width:min(100%,480px);background:var(--cream);color:var(--ink);border:4px solid var(--wine);border-radius:8px;padding:34px 28px 28px;text-align:center;box-shadow:inset 0 0 0 2px var(--cream),inset 0 0 0 3px var(--copper),0 24px 60px rgba(0,0,0,.6);animation:pop .45s cubic-bezier(.2,1.2,.3,1)}
+@keyframes pop{from{opacity:0;transform:scale(.85) translateY(20px)}}
+.mx{position:absolute;right:10px;top:6px;background:none;border:0;font-size:28px;color:var(--wine);cursor:pointer}
+.mt{font-family:var(--disp);font-weight:700;color:var(--wine);font-size:24px;margin-bottom:10px}
+.mbody p{margin:8px 0;font-size:19px}
+.mbody .btn{margin:14px 4px 0}
+.seats{margin:16px 0 4px;text-align:left}
+.seat{display:flex;justify-content:space-between;gap:10px;padding:11px 4px;border-top:1px dashed var(--copper);font-size:18px}
+.seat:last-child{border-bottom:1px dashed var(--copper)}
+.seat span{font-family:var(--cap);letter-spacing:.08em;color:var(--wine);font-size:13px;white-space:nowrap;padding-top:3px}
+.chk{text-align:left;margin:10px 0}
+.chk label{display:flex;gap:10px;align-items:center;padding:8px 4px;font-size:19px;cursor:pointer}
+.chk input{width:19px;height:19px;accent-color:var(--wine)}
+.mb input{font-family:var(--body);font-size:20px;padding:8px;border:1px solid var(--copper);border-radius:3px;background:#fffaf0;width:100%;margin:6px 0;color:var(--ink)}
+.mb label{display:block;text-align:left;font-family:var(--cap);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+
+/* ---------- ADMIN ---------- */
+#admin{position:fixed;inset:0;z-index:1000;background:#0a1330;overflow:auto;display:none;color:var(--ink);font-size:17px}
+#admin.show{display:block}
+.ad{max-width:1180px;margin:0 auto;padding:18px 16px 80px}
+.ad-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;color:#f1e4d6;margin-bottom:14px}
+.ad-head h2{font-family:var(--disp);font-size:20px}
+.ad-head .st{font-family:var(--cap);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#9fe0b0}
+.ad-head .st.bad{color:#ff9aa6}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.tabs button{font-family:var(--cap);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;padding:10px 14px;border-radius:30px;border:1px solid #ffffff33;background:transparent;color:#e8d9c8;cursor:pointer;transition:.25s}
+.tabs button.on,.tabs button:hover{background:var(--cream);color:var(--wine)}
+.panel{background:var(--cream);border-radius:8px;padding:18px 18px 20px;margin-bottom:16px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.panel h3{font-family:var(--cap);font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--wine);margin-bottom:10px}
+.panel p.h{font-size:15.5px;color:var(--muted);margin-bottom:10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+@media(max-width:700px){.grid2{grid-template-columns:1fr}}
+.fl{display:flex;flex-direction:column;gap:3px;margin-bottom:10px}
+.fl>span{font-family:var(--cap);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.ad input[type=text],.ad input[type=email],.ad input[type=date],.ad input[type=time],.ad input[type=number],.ad select,.ad textarea,.lg input{font-family:var(--body);font-size:17px;padding:8px 10px;border:1px solid #cdb79f;border-radius:4px;background:#fffdf8;color:var(--ink);width:100%;outline:none}
+.ad input:focus,.ad select:focus,.ad textarea:focus{border-color:var(--wine);box-shadow:0 0 0 2px #7a1f3322}
+.ad input[type=color]{width:54px;height:40px;padding:2px;border:1px solid #cdb79f;border-radius:4px;background:#fff}
+.ab{font-family:var(--cap);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:9px 14px;border-radius:4px;border:0;background:var(--wine);color:#f6e8dc;cursor:pointer}
+.ab:hover{background:var(--wine2)}
+.ab.o{background:transparent;color:var(--wine);border:1px solid var(--wine)}
+.ab.o:hover{background:var(--wine);color:#fff}
+.x{background:none;border:0;color:#a02a38;font-size:18px;cursor:pointer;padding:4px 8px}
+.tw{overflow-x:auto}
+table.t{border-collapse:collapse;width:100%;min-width:860px;font-size:16px}
+table.t th{font-family:var(--cap);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;text-align:left;color:var(--cream);background:var(--wine);padding:9px 8px;position:sticky;top:0}
+table.t td{padding:6px 6px;border-bottom:1px solid #e4d5c0;vertical-align:middle}
+table.t td.c{text-align:center}
+table.t tr:nth-child(even) td{background:#fbf5ea}
+.pill{display:inline-block;padding:3px 10px;border-radius:20px;font-size:13px;font-family:var(--cap);letter-spacing:.06em}
+.pill.y{background:#d9f0df;color:#1d6a35}.pill.n{background:#f7d9dc;color:#9c1c2a}.pill.p{background:#ece4d6;color:#7b6a55}
+.ov{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:8px}
+.ov div{border:1px solid #d9c5ac;border-radius:5px;padding:8px 10px;font-size:15px;background:#fffdf8}
+.ov div.over{border-color:#c0303f;background:#fdeaec}
+.ov b{display:block;font-family:var(--cap);font-size:12px;letter-spacing:.1em;color:var(--wine)}
+.sumrow{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.sumrow div{background:#fffdf8;border:1px solid #d9c5ac;border-radius:6px;padding:8px 14px;font-size:15px}
+.sumrow b{font-family:var(--disp);font-size:22px;color:var(--wine);margin-right:6px}
+.item{border:1px solid #d9c5ac;border-radius:6px;padding:12px;margin-bottom:12px;background:#fffdf8}
+.item .bar{display:flex;gap:6px;justify-content:flex-end;margin-bottom:6px;align-items:center}
+.thumb{width:120px;height:90px;object-fit:cover;border:1px solid #cdb79f;border-radius:4px;background:#eee;display:block;margin-bottom:6px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.lg input{margin:6px 0}
+.mbody .lg label{display:block;text-align:left;font-family:var(--cap);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+
+
+/* ---------- modal, in the same frame ---------- */
+#modal{background:rgba(5,10,28,.84)}
+.mbox{width:min(100%,520px);background:none;border:28px solid transparent;border-image:var(--frame) 40 fill/28px/0 stretch;border-radius:0;box-shadow:none;padding:6px 4px 4px;
+  filter:drop-shadow(0 30px 50px rgba(0,0,0,.65));animation:pop .6s var(--ease)}
+.mx{right:-14px;top:-22px;font-size:26px}
+.mt{font-family:var(--disp);font-weight:400;font-size:clamp(22px,5vw,27px);letter-spacing:.04em;margin-bottom:12px;line-height:1.2}
+.mbody p{font-size:20px}
+.mbody .btn{margin:16px 5px 0}
+.mbody .sealimg{width:70px;margin-bottom:6px}
+.seat{border-top:1px solid rgba(185,138,94,.6)}
+.seat:last-child{border-bottom:1px solid rgba(185,138,94,.6)}
+.mb input,.lg input{border-radius:0}
+.lg input{border:0;border-bottom:1px solid var(--gold);background:transparent;padding:8px 2px;font-size:21px}
+
+/* ---------- admin, quieter and more formal ---------- */
+#admin{background:radial-gradient(120% 80% at 12% -10%,#1b3070 0,#0d1a3e 50%,#08102a 100%);font-weight:500}
+#admin::before,#admin::after{display:none}
+.ad-head{border-bottom:1px solid rgba(185,138,94,.45);padding-bottom:16px;margin-bottom:18px}
+.ad-head h2{font-family:var(--cap);font-weight:500;font-size:14px;letter-spacing:.24em;text-transform:uppercase;gap:14px}
+.ad-head h2 img{width:42px;height:40px}
+.panel{background:#f8f1e6;border:1px solid rgba(185,138,94,.7);border-radius:2px;box-shadow:0 20px 44px rgba(0,0,0,.38);padding:24px 24px 26px}
+.panel h3{font-family:var(--cap);font-weight:500;font-size:12.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--wine);margin-bottom:14px}
+.panel h3::after{background:rgba(185,138,94,.6)}
+.panel p.h{font-size:17px;line-height:1.55}
+.tabs{gap:2px 6px;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:20px}
+.tabs button{border-radius:0;border:0;border-bottom:1px solid transparent;margin-bottom:-1px;padding:11px 12px;font-weight:400;font-size:10.5px;letter-spacing:.24em;color:rgba(241,226,205,.75);background:none}
+.tabs button.on,.tabs button:hover{background:none;color:#f3d7ae;border-bottom-color:#f3d7ae}
+.ab{border-radius:0;font-weight:500;letter-spacing:.2em;padding:10px 16px}
+.ab.o{border-color:rgba(91,19,35,.7)}
+table.t th{background:var(--wine);font-weight:500;letter-spacing:.2em;font-size:10px}
+.item{background:#fffdf8;border-radius:2px}
+.ad input[type=text],.ad input[type=email],.ad input[type=date],.ad input[type=time],.ad input[type=number],.ad select,.ad textarea{border-radius:2px;font-weight:500}
+.pill{letter-spacing:.08em}
+
+/* guest table: stacked party members */
+.gt td{vertical-align:top;padding-top:10px}
+.gt{min-width:1040px}
+.comps{display:flex;flex-direction:column;gap:5px}
+.comps input{padding:6px 9px!important;font-size:15.5px!important}
+.gt td.c{padding-top:16px}
+</style>
+</head>
+<body class="lock">
+
+<!-- shared SVG art -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<radialGradient id="rg" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#9a2e44"/><stop offset=".55" stop-color="#5e1426"/><stop offset="1" stop-color="#2b0812"/></radialGradient>
+<symbol id="rose" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="47" fill="url(#rg)"/>
+  <g fill="none" stroke="#d98a9c" stroke-opacity=".5" stroke-width="1.7" stroke-linecap="round">
+    <path d="M50 8C78 10 92 36 86 60 78 84 46 92 24 78 6 64 8 34 28 20"/>
+    <path d="M50 20C70 22 80 40 76 56 70 74 48 80 32 70 20 60 22 40 36 30"/>
+    <path d="M50 31C62 32 69 42 66 52 62 63 48 66 40 59 33 52 36 40 46 37"/>
+    <path d="M50 42C57 42 60 48 57 53 54 58 47 58 45 53"/>
+  </g>
+</symbol>
+<symbol id="leaf" viewBox="0 0 40 80"><path d="M20 78C2 50 4 20 20 2 36 20 38 50 20 78Z" fill="#c8977a"/><path d="M20 76V8" stroke="#8b5a44" stroke-width="1.2" fill="none"/></symbol>
+<symbol id="grapes" viewBox="0 0 100 100">
+  <path d="M52 2C50 18 54 30 50 44" stroke="#6b7d4a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <g fill="#1d2c5c" stroke="#0a1230" stroke-width="1.2">
+    <circle cx="30" cy="40" r="10"/><circle cx="50" cy="38" r="10"/><circle cx="70" cy="42" r="10"/>
+    <circle cx="40" cy="56" r="10"/><circle cx="60" cy="56" r="10"/><circle cx="24" cy="58" r="9"/><circle cx="76" cy="60" r="9"/>
+    <circle cx="50" cy="72" r="10"/><circle cx="34" cy="74" r="9"/><circle cx="66" cy="74" r="9"/><circle cx="50" cy="88" r="9"/>
+  </g>
+  <g fill="#4a62a6" opacity=".6"><circle cx="27" cy="36" r="3"/><circle cx="47" cy="34" r="3"/><circle cx="67" cy="38" r="3"/><circle cx="37" cy="52" r="3"/><circle cx="57" cy="52" r="3"/><circle cx="47" cy="68" r="3"/></g>
+</symbol>
+</defs></svg>
+
+<!-- COVER -->
+<div id="cover"></div>
+
+<div id="prog"></div>
+<div class="amb tl"></div><div class="amb br"></div>
+<nav id="nav">
+  <a href="#invite" data-go="invite">Invitation</a><a href="#venue" data-go="venue">Venue</a><a href="#entourage" data-go="entourage">Entourage</a>
+  <a href="#dress" data-go="dress">Dress Code</a><a href="#rsvp" data-go="rsvp">RSVP</a><a href="#faq" data-go="faq">FAQ</a>
+</nav>
+
+<main>
+  <section class="sec" id="invite"></section>
+  <section class="sec" id="venue"></section>
+  <section class="sec" id="entourage"></section>
+  <section class="sec" id="dress"></section>
+  <section class="sec" id="rsvp"></section>
+  <section class="sec" id="faq"></section>
+  <section class="sec" id="closing"></section>
+  <footer>The ART of loving MARGA</footer>
+</main>
+
+<button id="monoBtn" title="Admin" aria-label="Admin login">A&amp;M</button>
+
+<div id="modal"><div class="mbox"><button class="mx" data-act="mclose" aria-label="Close">&times;</button><div class="mbody"></div></div></div>
+<div id="admin"></div>
+<noscript><p style="padding:40px;text-align:center">Please enable JavaScript to view this wedding website.</p></noscript>
+
+<script>
+/* =====================================================================
+   SETTINGS YOU MAY WANT TO CHANGE
+   ---------------------------------------------------------------------
+   CLOUD_URL : OPTIONAL but REQUIRED if you want guest RSVPs to reach the admin page
+               on YOUR device. Paste a free Firebase Realtime Database URL, e.g.
+               "https://your-project-default-rtdb.asia-southeast1.firebasedatabase.app"
+               (create it in the Firebase console, rules in "test mode" / read+write true).
+               Leave "" to run without it (everything is then saved per-browser only).
+   EMBEDDED  : Paste the code from Admin > Settings > "Copy publish data" here
+               (replace null) so your latest edits show up for guests when you publish.
+   ===================================================================== */
+const CLOUD_URL = "https://taolm-36619-default-rtdb.asia-southeast1.firebasedatabase.app";
+const EMBEDDED = null;
+const ADMIN_USER = "SV", ADMIN_PASS = "SV2026";
+/* ===================================================================== */
+
+const ASSET = {"plate": "assets/file-7-525706.jpg", "invite": "assets/file-8-a059c7.jpg", "seal": "assets/file-1-a44c41.png", "flTL": "assets/file-9-76f1b6.jpg", "flBR": "assets/file-10-d2fa62.jpg"};
+const TABLES = ["VIP 1","VIP 2","Table 1","Table 2","Table 3","Table 4","Table 5","Table 6","Table 7","Table 8"];
+const LS = "marga_wedding_v2", LS_R = "marga_wedding_rsvps_v2";
+const $ = (s,r=document)=>r.querySelector(s), $$ = (s,r=document)=>[...r.querySelectorAll(s)];
+const arr = x => Array.isArray(x) ? x.filter(v=>v!=null) : (x && typeof x==='object' ? Object.values(x) : []);
+const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const br = s => esc(s).replace(/\n/g,'<br>');
+const clone = o => JSON.parse(JSON.stringify(o));
+const uid = () => Math.random().toString(36).slice(2,9);
+const norm = s => String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+const keyOf = n => norm(n).replace(/ /g,'_');
+const MP = () => Math.min(10,Math.max(2,Number(DB&&DB.settings&&DB.settings.maxParty)||5));
+const splitN = s => String(s||'').split(/[,;\n]/).map(x=>x.trim()).filter(Boolean);
+
+/* ---------- default content ---------- */
+const DEF = {
+ s:{
+  brideFull:"Margarette Macasieb Serrano", groomFull:"Artfol Del Rosario Valler", brideShort:"Margarette", groomShort:"Artfol",
+  date:"2026-12-28", time:"14:00",
+  introTop:"Together with our families",
+  introLines:"We cordially invite you\nto witness and share with us\nthe beginning of our new life together",
+  asThey:"As they begin their journey\nas husband and wife",
+  church:"Iglesia ni Cristo", churchLoc:"Local ng Pilot", reception:"Mad Cafe (Glad Cafe)",
+  quote:"So they are no longer two, but one flesh.", verse:"Matthew 19:6",
+  cornerTR:"One Faith\nOne Love\nA Brighter\nTomorrow", cornerBL:"Built on faith\nGuided by love\nBlessed forever",
+  plateTag:"A lifetime together", coverPlate:"", hotX:29.3, hotY:56.6, hotS:18,
+  inviteMode:"image", inviteImg:"", cdX:14, cdY:61.9, cdW:72, cdH:17.2,
+  countdownLabel:"Counting the hours until we say “I do”",
+  venues:[
+   {title:"The Ceremony",name:"Iglesia ni Cristo – Lokal ng Pilot",address:"Address to be announced",maps:"",photo:"",mapImg:""},
+   {title:"The Reception",name:"Mad Cafe (Glad Cafe)",address:"Address to be announced",maps:"",photo:"",mapImg:""}
+  ],
+  entourage:[
+   {title:"Parents of the Groom",names:"Arturo Valler\nOfelia Valler",full:false},
+   {title:"Parents of the Bride",names:"Edgar Serrano\nMarife Serrano",full:false},
+   {title:"Principal Sponsors",names:"Mr. & Mrs. TBA\nMr. & Mrs. TBA\nMr. & Mrs. TBA\nMr. & Mrs. TBA\nMr. & Mrs. TBA",full:true},
+   {title:"Best Man",names:"Arturo Valler Jr.",full:false},
+   {title:"Maid of Honor",names:"Mariane Kyle Serrano",full:false},
+   {title:"Groomsmen",names:"Rogelio Penio Jr.\nWernher John Lopez\nEdmar Garcia\nTBA",full:false},
+   {title:"Bridesmaids",names:"Mary Mhizzy Macasieb\nClaire Francisco\nMa. Joyce Anglea Nipas\nChristina Teng",full:false},
+   {title:"Flower Girls",names:"TBA\nTBA",full:false},
+   {title:"Ring Bearer",names:"TBA",full:false}
+  ],
+  dressIntro:"We kindly encourage our guests to wear formal to semi-formal attire in these colors on our special day.",
+  dressImages:[{src:"",caption:"For the ladies"},{src:"",caption:"For the gentlemen"}],
+  colors:[{name:"Wine",hex:"#5a1020"},{name:"Midnight Blue",hex:"#14224a"},{name:"Dusty Rose",hex:"#c99a9a"},{name:"Mocha",hex:"#7a5640"},{name:"Slate Gray",hex:"#6b7280"}],
+  dressNote:"Please do not wear white.",
+  giftNote:"Your presence at our wedding is the greatest gift of all.",
+  rsvpIntro:"Seating is limited and by personal invitation only. Please enter your full name exactly as it appears on your invitation.",
+  rsvpDeadline:"To be announced",
+  faq:[
+   {q:"What is the RSVP deadline?",a:"Kindly confirm your attendance on or before {deadline}.",link:"rsvp",linkText:"Go to RSVP"},
+   {q:"What time should we arrive, and where is it?",a:"The ceremony begins at {time} at {church}, followed by the reception at {reception}. We kindly ask guests to arrive 30 minutes early.",link:"venue",linkText:"View venue details"},
+   {q:"Is there parking?",a:"Parking is limited to 15 cars only. We encourage carpooling with fellow guests.",link:"",linkText:""},
+   {q:"What is the dress code?",a:"Formal to semi-formal attire in our wedding colors: wine, midnight blue, dusty rose, mocha and slate gray.",link:"dress",linkText:"See the dress code"}
+  ],
+  closing:"From the bottom of our hearts, thank you for being part of our story. Your love, prayers and presence mean the world to us as we begin this new chapter, guided by faith. We can’t wait to celebrate with you.",
+  capacity:10, maxParty:5
+ },
+ guests:[
+  {id:"demo1",name:"Juan Dela Cruz",companions:"Maria Dela Cruz",table:"VIP 1"},
+  {id:"demo2",name:"Ana Reyes",companions:"",table:"Table 1"}
+ ]
+};
+
+/* ---------- data layer ---------- */
+const cloud = {
+  on: !!CLOUD_URL, base: (CLOUD_URL||'').replace(/\/$/,'') + '/wedding',
+  async get(){ const r=await fetch(this.base+'.json'); if(!r.ok) throw 0; return r.json(); },
+  put(p,d){ return fetch(`${this.base}/${p}.json`,{method:'PUT',body:JSON.stringify(d)}).then(r=>{if(!r.ok)throw 0}); },
+  post(p,d){ return fetch(`${this.base}/${p}.json`,{method:'POST',body:JSON.stringify(d)}).then(r=>{if(!r.ok)throw 0}); },
+  del(p){ return fetch(`${this.base}/${p}.json`,{method:'DELETE'}).then(r=>{if(!r.ok)throw 0}); }
+};
+function normDB(d, seed){
+  d = d || {};
+  const s = Object.assign(clone(DEF.s), d.settings||{});
+  ['venues','entourage','dressImages','colors','faq'].forEach(k=>s[k]=arr(s[k]));
+  const guests = d.guests ? arr(d.guests) : (seed ? clone(DEF.guests) : []);
+  guests.forEach(g=>{ g.id=g.id||uid(); g.companions=g.companions||''; g.table=g.table||''; });
+  return {settings:s, guests, rsvps:d.rsvps||{}, attempts:arr(d.attempts)};
+}
+let DB;
+function loadInitial(){
+  let base=null, r={}, a=[];
+  try{ base = JSON.parse(localStorage.getItem(LS)||'null'); }catch(e){}
+  try{ const x=JSON.parse(localStorage.getItem(LS_R)||'null'); if(x){r=x.rsvps||{};a=arr(x.attempts);} }catch(e){}
+  DB = normDB(base || EMBEDDED, !base && !EMBEDDED);
+  DB.rsvps = r; DB.attempts = a;
+}
+function saveRsvpLocal(){ try{ localStorage.setItem(LS_R,JSON.stringify({rsvps:DB.rsvps,attempts:DB.attempts})) }catch(e){} }
+async function pullCloud(withSettings){
+  if(!cloud.on) return;
+  try{
+    const d = await cloud.get(); if(!d) return;
+    const n = normDB(d,false);
+    DB.guests=n.guests; DB.rsvps=n.rsvps; DB.attempts=n.attempts;
+    if(withSettings) DB.settings=n.settings;
+  }catch(e){}
+}
+let saveT;
+function setStatus(t,bad){ const el=$('#adSt'); if(el){el.textContent=t; el.classList.toggle('bad',!!bad);} }
+function persist(kind,now){
+  clearTimeout(saveT);
+  const go=()=>{
+    try{ localStorage.setItem(LS,JSON.stringify({settings:DB.settings,guests:DB.guests})) }catch(e){ setStatus('Storage full – use smaller images',1) }
+    if(cloud.on){
+      setStatus('Saving…');
+      const jobs=[];
+      if(kind==='s'||kind==='all') jobs.push(cloud.put('settings',DB.settings));
+      if(kind==='g'||kind==='all') jobs.push(cloud.put('guests',DB.guests));
+      Promise.all(jobs).then(()=>setStatus('Saved online ✓')).catch(()=>setStatus('Offline – not synced',1));
+    } else setStatus('Saved on this device');
+    renderSite();
+  };
+  now ? go() : (saveT=setTimeout(go,450));
+}
+
+/* ---------- helpers: dates ---------- */
+const S = () => DB.settings;
+const evDate = () => new Date(`${S().date||'2026-12-28'}T${S().time||'14:00'}:00+08:00`);
+const fm = o => evDate().toLocaleDateString('en-US',Object.assign({timeZone:'Asia/Manila'},o));
+const fTime = () => evDate().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'Asia/Manila'});
+const tok = s => String(s||'').replace(/\{deadline\}/g,S().rsvpDeadline).replace(/\{time\}/g,fTime()).replace(/\{date\}/g,fm({month:'long',day:'numeric',year:'numeric'}))
+  .replace(/\{church\}/g,S().church).replace(/\{reception\}/g,S().reception);
+
+/* ---------- icons / art ---------- */
+const ICON = {
+ cal:`<svg viewBox="0 0 48 48" fill="currentColor"><rect x="5" y="9" width="38" height="34" rx="4"/><rect x="12" y="3" width="5" height="11" rx="2"/><rect x="31" y="3" width="5" height="11" rx="2"/><g fill="#f6efe4"><rect x="12" y="20" width="6" height="5"/><rect x="21" y="20" width="6" height="5"/><rect x="30" y="20" width="6" height="5"/><rect x="12" y="28" width="6" height="5"/><rect x="21" y="28" width="6" height="5"/><rect x="30" y="28" width="6" height="5"/><rect x="12" y="35" width="6" height="4"/><rect x="21" y="35" width="6" height="4"/></g></svg>`,
+ clock:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="19"/><path d="M24 12v13l9 6"/></svg>`,
+ church:`<svg viewBox="0 0 48 52" fill="currentColor"><path d="M23 2h2v5h4v2h-4v5h-2V9h-4V7h4z"/><path d="M24 14l8 8v5l5 4v17H11V31l5-4v-5z"/><path d="M5 34l6-4v20H5z"/><path d="M43 34l-6-4v20h6z"/><path fill="#f6efe4" d="M20 50V38a4 4 0 018 0v12z"/></svg>`,
+ fork:`<svg viewBox="0 0 44 48" fill="currentColor"><path d="M6 2h3v14h2V2h3v14h2V2h3v16c0 4-2 6-5 7l1 21H10l1-21c-3-1-5-3-5-7z" transform="translate(-2 0)"/><path d="M33 2c5 0 8 7 8 14 0 5-3 8-6 9l1 21h-5l1-21c-3-1-6-4-6-9C26 9 29 2 33 2z" transform="translate(-1 0)"/></svg>`,
+ chapelBig:`<svg viewBox="0 0 90 120" fill="#7a1f33"><path d="M45 4l6 22 8 22 6 22 8 24 10 26H7l10-26 8-24 6-22 8-22z" opacity=".95"/><path d="M45 14l4 16 5 18 5 20 6 24 7 22H18l7-22 6-24 5-20 5-18z" fill="#5e1424"/><path d="M35 118V86c0-6 4-9 10-9s10 3 10 9v32z" fill="#f2efe9"/></svg>`,
+ pin:`<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 119.5 9 2.5 2.5 0 0112 11.5z"/></svg>`
+};
+const SCOOT = `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#f4f1ea"/>
+<circle cx="100" cy="100" r="92" fill="none" stroke="#2c4580" stroke-width="9"/>
+<path d="M104 56C70 50 46 82 40 128c18-8 34-22 56-60z" fill="#fff" stroke="#cfc8bd" stroke-width="2"/>
+<g fill="#cfc8bd"><circle cx="58" cy="96" r="2"/><circle cx="70" cy="84" r="2"/><circle cx="52" cy="112" r="2"/><circle cx="82" cy="72" r="2"/><circle cx="66" cy="104" r="2"/></g>
+<path d="M104 74c6-8 20-8 24 2l6 38h-34z" fill="#7a1f33"/>
+<circle cx="112" cy="60" r="10" fill="#f1d3bd"/>
+<path d="M102 56c4-10 20-10 22 2-6-4-14-4-22-2z" fill="#3a1c14"/>
+<path d="M126 82l16-10" stroke="#f1d3bd" stroke-width="6" stroke-linecap="round"/>
+<path d="M106 112l-8 26h12l12-22z" fill="#f1d3bd"/>
+<path d="M60 150c0-16 12-26 28-26h40l-8-28h12l10 28c10 4 14 14 14 26z" fill="#5e1424"/>
+<path d="M134 96l6-26h12" stroke="#5e1424" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="70" cy="156" r="17" fill="#5e1424" stroke="#f4f1ea" stroke-width="4"/><circle cx="70" cy="156" r="6" fill="#f4f1ea"/>
+<circle cx="146" cy="156" r="17" fill="#5e1424" stroke="#f4f1ea" stroke-width="4"/><circle cx="146" cy="156" r="6" fill="#f4f1ea"/>
+</svg>`;
+const PLACEHOLDER = `<svg viewBox="0 0 24 24" fill="currentColor" opacity=".7"><path d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm1 2v8l4-4 3 3 4-5 3 4V7z"/></svg>`;
+const orn = '<svg class="orn" viewBox="0 0 230 14" aria-hidden="true"><path d="M0 7H92M138 7H230" stroke="currentColor" stroke-width=".8" fill="none"/><path d="M115 0l5 7-5 7-5-7z" fill="currentColor"/><circle cx="101" cy="7" r="1.6" fill="currentColor"/><circle cx="129" cy="7" r="1.6" fill="currentColor"/></svg>';
+const decor = () => '';
+const notch = '';
+const imgOrPh = (src,cls='vimg') => src ? `<img class="${cls}" src="${esc(src)}" alt="">` : `<div class="${cls}">${PLACEHOLDER}</div>`;
+
+/* ---------- render public site ---------- */
+function renderCover(){
+  const s=S();
+  $('#cover').innerHTML = `<div class="cover-in">
+    <h1 class="site-title">The <b>ART</b> of loving <b>MARGA</b></h1>
+    <div class="pwrap"><img class="pimg" src="${esc(s.coverPlate||ASSET.plate)}" alt="Artfol &amp; Margarette — December 28, 2026">
+      <button class="hot" id="scoot" aria-label="Tap the scooter to open the invitation" style="left:${+s.hotX}%;top:${+s.hotY}%;width:${+s.hotS}%"></button></div>
+    <div class="cover-hint">Tap the scooter to enter</div></div>`;
+  $('#scoot').onclick = openCover;
+}
+function renderInvite(){
+  const s=S();
+  if(s.inviteMode==='text') return renderInviteText();
+  $('#invite').innerHTML = `<div class="wrap"><div class="inv-img rv"><img src="${esc(s.inviteImg||ASSET.invite)}" alt="Wedding invitation">
+    <div class="cdov" id="cdWrap" style="left:${+s.cdX}%;top:${+s.cdY}%;width:${+s.cdW}%;height:${+s.cdH}%">
+      <div class="cl">${esc(s.countdownLabel)}</div><div class="ch" id="cdH">0</div><div class="chs">hours to go</div>
+      <div class="cr"><span><b id="cdD">0</b> days</span><span><b id="cdh">0</b> hrs</span><span><b id="cdm">0</b> min</span><span><b id="cds">0</b> sec</span></div>
+    </div></div></div>`;
+}
+function renderInviteText(){
+  const s=S();
+  $('#invite').innerHTML = `<div class="wrap">
+   <div class="cornertxt tr">${br(s.cornerTR)}</div><div class="cornertxt bl">${br(s.cornerBL)}</div>
+   <div class="card rv">${notch}
+    <p class="cap">${esc(s.introTop)}</p>
+    <p class="cap sm" style="margin-top:14px">${br(s.introLines)}</p>
+    ${orn}
+    <h2 class="nm">${esc(s.brideFull)}</h2><div class="and">AND</div><h2 class="nm">${esc(s.groomFull)}</h2>
+    <p class="cap sm" style="margin-top:14px">${br(s.asThey)}</p>
+    ${orn}
+    <div class="info3">
+      <div>${ICON.cal}<span class="cap">${fm({weekday:'long'})}<br>${fm({month:'long',day:'numeric',year:'numeric'})}</span></div>
+      <div>${ICON.clock}<span class="cap">At<br>${fTime()}</span></div>
+      <div>${ICON.church}<span class="cap"><b style="font-weight:600">${esc(s.church)}</b><br>${esc(s.churchLoc)}</span></div>
+    </div>
+    ${orn}
+    <div class="recep">${ICON.fork}<div><b>RECEPTION TO FOLLOW</b><span>${esc(s.reception)}</span></div></div>
+    <div class="cdbox" id="cdWrap">
+      <div class="cd-label">${esc(s.countdownLabel)}</div>
+      <div class="cd-hours" id="cdH">0</div><div class="cd-hours-s">hours to go</div>
+      <div class="cd-tiles"><div><b id="cdD">0</b><span>Days</span></div><div><b id="cdh">0</b><span>Hours</span></div><div><b id="cdm">0</b><span>Minutes</span></div><div><b id="cds">0</b><span>Seconds</span></div></div>
+    </div>
+    ${orn}
+    <p class="quote">“${esc(s.quote)}”<small>${esc(s.verse)}</small></p>
+   </div>${decor()}</div>`;
+}
+function renderVenue(){
+  const s=S();
+  $('#venue').innerHTML = `<div class="wrap"><div class="card rv">${notch}
+    <h2 class="title">The Venue</h2>${orn}
+    <div class="venues">${arr(s.venues).map(v=>`
+      <div class="vcard">${imgOrPh(v.photo)}
+        <div class="vt">${esc(v.title)}</div><div class="vn">${esc(v.name)}</div><div class="va">${br(v.address)}</div>
+        ${v.mapImg?(v.maps?`<a href="${esc(v.maps)}" target="_blank" rel="noopener"><img class="vmap" src="${esc(v.mapImg)}" alt="Map"></a>`:`<img class="vmap" src="${esc(v.mapImg)}" alt="Map">`):''}
+        ${v.maps?`<a class="btn" href="${esc(v.maps)}" target="_blank" rel="noopener">Click to navigate</a>`:`<span class="btn dis">Map link coming soon</span>`}
+      </div>`).join('')}</div>
+   </div>${decor()}</div>`;
+}
+function renderEntourage(){
+  $('#entourage').innerHTML = `<div class="wrap"><div class="card rv">${notch}
+    <h2 class="title">The Entourage</h2>${orn}
+    <div class="ent">${arr(S().entourage).map(g=>`<div class="g ${g.full?'full':''}"><h3>${esc(g.title)}</h3>${`<div class="nl">${splitN2(g.names).map(n=>`<p>${esc(n)}</p>`).join('')}</div>`}</div>`).join('')}</div>
+   </div>${decor()}</div>`;
+}
+const splitN2 = s => String(s||'').split('\n').map(x=>x.trim()).filter(Boolean);
+function renderDress(){
+  const s=S();
+  $('#dress').innerHTML = `<div class="wrap"><div class="card rv">${notch}
+    <h2 class="title">Details</h2><div class="sub">Dress Code</div>${orn}
+    <p style="font-size:20px">${br(s.dressIntro)}</p>
+    ${arr(s.dressImages).length?`<div class="dimgs">${arr(s.dressImages).map(i=>`<div class="dimg">${imgOrPh(i.src)}${i.caption?`<span>${esc(i.caption)}</span>`:''}</div>`).join('')}</div>`:''}
+    <div class="swatches">${arr(s.colors).map(c=>`<div class="sw"><i style="background:${esc(c.hex)}"></i><span>${esc(c.name)}</span></div>`).join('')}</div>
+    <div class="dnote">${esc(s.dressNote)}</div>
+    ${s.giftNote?`<div class="gift">${br(s.giftNote)}</div>`:''}
+   </div>${decor()}</div>`;
+}
+function renderRSVP(){
+  const s=S();
+  $('#rsvp').innerHTML = `<div class="wrap"><div class="card rv">${notch}
+    <h2 class="title">RSVP</h2><div class="sub">Kindly reply</div>${orn}
+    <p style="font-size:20px;max-width:520px;margin:0 auto">${br(s.rsvpIntro)}</p>
+    <form class="rform" id="rsvpForm" novalidate>
+      <label class="f"><span>Full name</span><input type="text" name="name" autocomplete="name" placeholder="As written on your invitation"></label>
+      <label class="f"><span>Email address</span><input type="email" name="email" autocomplete="email" placeholder="you@email.com"></label>
+      <div><div class="lbl">Will you be attending?</div>
+        <div class="pills"><label><input type="radio" name="att" value="yes"><span>Joyfully accepts</span></label><label><input type="radio" name="att" value="no"><span>Regretfully declines</span></label></div></div>
+      <div class="err" id="rErr"></div>
+      <button class="btn" type="submit">Submit RSVP</button>
+    </form>
+    <p class="deadline">Please respond on or before: <b>${esc(s.rsvpDeadline)}</b></p>
+   </div>${decor()}</div>`;
+  $('#rsvpForm').addEventListener('submit',submitRSVP);
+}
+function renderFAQ(){
+  $('#faq').innerHTML = `<div class="wrap"><div class="card rv">${notch}
+    <h2 class="title">FAQ’s</h2><div class="sub">Good to know</div>${orn}
+    <div class="faq">${arr(S().faq).map(f=>`<div><h4>${esc(f.q)}</h4><p>${br(tok(f.a))}</p>${f.link?`<a class="lk" data-go="${esc(f.link)}">${esc(f.linkText||'Go')}</a>`:''}</div>`).join('')}</div>
+   </div>${decor()}</div>`;
+}
+function renderClosing(){
+  const s=S();
+  $('#closing').innerHTML = `<div class="wrap"><div class="card rv">${notch}
+    <img class="sealimg" src="${ASSET.seal}" alt=""><div class="sub">With all our love</div>${orn}
+    <p class="sweet">${br(s.closing)}</p>
+    <div class="sign">${esc(s.groomShort)} &amp; ${esc(s.brideShort)}</div>
+   </div>${decor()}</div>`;
+}
+function renderSite(){
+  renderCover(); renderInvite(); renderVenue(); renderEntourage(); renderDress(); renderRSVP(); renderFAQ(); renderClosing();
+  observe(); tick();
+}
+let io;
+function observe(){
+  if(!('IntersectionObserver' in window)){ $$('.rv').forEach(e=>e.classList.add('in')); return; }
+  if(!io) io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)} }),{threshold:.08,rootMargin:'0px 0px -6% 0px'});
+  $$('.rv:not(.in)').forEach(e=>io.observe(e));
+}
+function tick(){
+  const H=$('#cdH'); if(!H) return;
+  const d=evDate()-Date.now();
+  if(d<=0){ $('#cdWrap').innerHTML='<div class="cd-done">Today, we say “I do.”</div>'; return; }
+  H.textContent=Math.floor(d/36e5).toLocaleString('en-US');
+  $('#cdD').textContent=Math.floor(d/864e5); $('#cdh').textContent=Math.floor(d%864e5/36e5);
+  $('#cdm').textContent=String(Math.floor(d%36e5/6e4)).padStart(2,'0'); $('#cds').textContent=String(Math.floor(d%6e4/1e3)).padStart(2,'0');
+}
+setInterval(tick,1000);
+
+function openCover(){
+  const c=$('#cover'); c.classList.add('go'); document.body.classList.remove('lock'); document.body.classList.add('opened');
+  try{sessionStorage.setItem('marga_open','1')}catch(e){}
+  setTimeout(()=>{c.style.display='none';window.scrollTo(0,0);observe()},1100);
+}
+function goTo(id){ const el=document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); }
+document.addEventListener('click',e=>{
+  const g=e.target.closest('[data-go]'); if(g){ e.preventDefault(); if($('#admin').classList.contains('show')) return; closeModal(); goTo(g.dataset.go); }
+});
+
+/* ---------- modal ---------- */
+function modal(html){ $('#modal .mbody').innerHTML=html; $('#modal').classList.add('show'); }
+function closeModal(){ $('#modal').classList.remove('show'); }
+$('#modal').addEventListener('click',e=>{ if(e.target.id==='modal'||e.target.closest('[data-act="mclose"]')) closeModal(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
+
+/* ---------- guests / seating ---------- */
+function members(g){
+  return [{name:g.name,primary:true}].concat(splitN(g.companions).map(n=>({name:n}))).filter(m=>m.name&&m.name.trim()).map(m=>({name:m.name.trim(),primary:!!m.primary,key:keyOf(m.name),pid:g.id}));
+}
+const allMembers = () => DB.guests.flatMap(g=>members(g).map(m=>Object.assign({g},m)));
+function findMember(name){
+  const n=norm(name), all=allMembers();
+  const ex=all.filter(m=>norm(m.name)===n);
+  if(ex.length) return ex.length===1?ex[0]:'amb';
+  const t=n.split(' ').filter(Boolean); if(t.length<2) return 'short';
+  const fz=all.filter(m=>{const mt=norm(m.name).split(' ');return t.every(x=>mt.includes(x))});
+  return fz.length===1?fz[0]:(fz.length>1?'amb':null);
+}
+function seatMap(){
+  const c={},out={};
+  DB.guests.forEach(g=>members(g).forEach(m=>{ if(g.table){ c[g.table]=(c[g.table]||0)+1; out[m.key]={table:g.table,seat:c[g.table]}; } }));
+  return out;
+}
+const seatTxt = (SM,m) => SM[m.key] ? `${esc(SM[m.key].table)} · Seat ${SM[m.key].seat}` : 'Table to be assigned';
+const dateStr = t => new Date(t).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'Asia/Manila'});
+
+async function record(m,g,att,email,by){
+  const o={name:m.name,email,attending:att,by,at:Date.now(),pid:g.id};
+  DB.rsvps[m.key]=o; saveRsvpLocal();
+  if(cloud.on){ try{ await cloud.put('rsvps/'+m.key,o) }catch(e){} }
+}
+function ticket(g,title,lead){
+  const SM=seatMap();
+  const rows=members(g).filter(m=>DB.rsvps[m.key]&&DB.rsvps[m.key].attending==='yes');
+  return `<div class="mt">${title}</div>${lead?`<p>${lead}</p>`:''}
+   <div class="seats">${rows.map(m=>`<div class="seat"><b>${esc(m.name)}</b><span>${seatTxt(SM,m)}</span></div>`).join('')}</div>
+   <button class="btn" data-act="mclose">Close</button>`;
+}
+function partyStep(g,me,title,lead){
+  const pending=members(g).filter(m=>m.key!==me.key&&!DB.rsvps[m.key]);
+  if(!pending.length){ modal(ticket(g,title,lead)); return; }
+  const SM=seatMap();
+  modal(`<div class="mt">${title}</div>${lead?`<p>${lead}</p>`:''}
+    <div class="seats"><div class="seat"><b>${esc(me.name)}</b><span>${seatTxt(SM,me)}</span></div></div>
+    <p style="margin-top:14px">Your invitation also includes the guest(s) below. Select who will be attending so their seats are reserved.</p>
+    <div class="chk">${pending.map(m=>`<label><input type="checkbox" value="${esc(m.key)}" checked> ${esc(m.name)} <span style="margin-left:auto;font-family:var(--cap);font-size:12px;color:var(--wine)">${seatTxt(SM,m)}</span></label>`).join('')}</div>
+    <button class="btn" data-act="party-yes" data-pid="${esc(g.id)}" data-me="${esc(me.key)}">Confirm seats</button>
+    <button class="btn ghost" data-act="party-skip" data-pid="${esc(g.id)}" data-me="${esc(me.key)}">Just me</button>`);
+}
+$('#modal').addEventListener('click',async e=>{
+  const b=e.target.closest('[data-act]'); if(!b) return;
+  if(b.dataset.act!=='party-yes'&&b.dataset.act!=='party-skip') return;
+  const g=DB.guests.find(x=>x.id===b.dataset.pid); if(!g) return;
+  const me=members(g).find(m=>m.key===b.dataset.me); if(!me) return;
+  if(b.dataset.act==='party-yes'){
+    const keys=$$('.chk input:checked',$('#modal')).map(i=>i.value);
+    const email=(DB.rsvps[me.key]||{}).email||'';
+    for(const m of members(g)){ if(keys.includes(m.key)&&!DB.rsvps[m.key]) await record(m,g,'yes',email,me.name); }
+    modal(ticket(g,'Seats reserved'));
+  } else modal(ticket(g,'You’re confirmed'));
+});
+
+async function submitRSVP(e){
+  e.preventDefault();
+  const f=e.target, err=$('#rErr'), name=f.name.value.trim(), email=f.email.value.trim(), att=(f.att.value||'');
+  err.textContent='';
+  if(name.length<3){ err.textContent='Please enter your full name.'; return; }
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ err.textContent='Please enter a valid email address.'; return; }
+  if(!att){ err.textContent='Please tell us if you will be attending.'; return; }
+  const btn=$('button[type=submit]',f); btn.disabled=true; btn.textContent='Checking…';
+  try{
+    await pullCloud(false);
+    const hit=findMember(name);
+    if(hit==='short'){ modal(`<div class="mt">One moment</div><p>Please enter your complete name (first and last name) exactly as it appears on your invitation.</p><button class="btn" data-act="mclose">Okay</button>`); return; }
+    if(hit==='amb'){ modal(`<div class="mt">One moment</div><p>We found more than one similar name. Kindly enter your complete name exactly as it appears on your invitation.</p><button class="btn" data-act="mclose">Okay</button>`); return; }
+    if(!hit){
+      const a={name,email,at:Date.now()}; DB.attempts.push(a); saveRsvpLocal();
+      if(cloud.on){ try{ await cloud.post('attempts',a) }catch(x){} }
+      modal(`<div class="mt">With Regret</div><p>Thank you for your interest in celebrating with us. We are sorry to share that we could not find your name on our guest list.</p><p>As seating at our wedding is limited and by personal invitation only, we are unable to accommodate additional guests.</p><p>We kindly ask for your understanding.</p><button class="btn" data-act="mclose">Close</button>`);
+      return;
+    }
+    const g=hit.g, me=members(g).find(m=>m.key===hit.key), ex=DB.rsvps[me.key];
+    if(ex){
+      const by=ex.by&&norm(ex.by)!==norm(me.name)?ex.by:null, when=dateStr(ex.at);
+      if(ex.attending==='yes'){
+        partyStep(g,me,'Already RSVP’d', by?`<b>${esc(by)}</b> has already RSVP’d on your behalf on ${when}. Your seat is reserved — no further action is needed.`:`We already received your RSVP on ${when}.`);
+      } else {
+        modal(`<div class="mt">Response on file</div><p>${by?`<b>${esc(by)}</b> responded for you on ${when}.`:`We already received your response on ${when}.`} It was recorded as <b>unable to attend</b>.</p><button class="btn" data-act="mclose">Close</button>`);
+      }
+      return;
+    }
+    await record(me,g,att,email,me.name);
+    f.reset();
+    if(att==='no'){ modal(`<div class="mt">We’ll Miss You</div><p>Thank you for letting us know, ${esc(me.name.split(' ')[0])}. Your response has been recorded.</p><button class="btn" data-act="mclose">Close</button>`); }
+    else partyStep(g,me,'You’re Confirmed','Thank you! Your reserved seat is below.');
+  } finally { btn.disabled=false; btn.textContent='Submit RSVP'; }
+}
+
+/* ================= ADMIN ================= */
+const getPath = p => p.split('.').slice(1).reduce((o,k)=>o?.[k], p[0]==='g'?DB.guests:DB.settings);
+function setPath(p,v){
+  const parts=p.split('.'); let o=parts[0]==='g'?DB.guests:DB.settings;
+  for(let i=1;i<parts.length-1;i++) o=o[parts[i]];
+  o[parts[parts.length-1]]=v;
+}
+let tab='guests';
+const F=(label,path,o={})=>{ const v=getPath(path)??''; return `<label class="fl"><span>${label}</span>${o.area?`<textarea data-path="${path}" rows="${o.rows||3}">${esc(v)}</textarea>`:`<input type="${o.type||'text'}" ${o.type==='number'?'step="any"':''} data-path="${path}" value="${esc(v)}" ${o.ph?`placeholder="${esc(o.ph)}"`:''}>`}</label>`; };
+const IMG=(label,path)=>{ const v=getPath(path)||''; return `<div class="fl"><span>${label}</span>${v?`<img class="thumb" src="${esc(v)}" alt="">`:''}
+  <div class="row"><input type="file" accept="image/*" data-img="${path}" style="max-width:260px">${v?`<button class="ab o" data-act="clear-img" data-p="${path}">Remove</button>`:''}</div>
+  <input type="text" data-path="${path}" value="${v.startsWith('data:')?'':esc(v)}" placeholder="…or paste an image link (https://…)" style="margin-top:6px"></div>`; };
+const bar=(list,i,n,ud=true)=>`<div class="bar">${ud?`<button class="ab o" data-act="up" data-l="${list}" data-i="${i}" ${i===0?'disabled':''}>▲</button><button class="ab o" data-act="down" data-l="${list}" data-i="${i}" ${i===n-1?'disabled':''}>▼</button>`:''}<button class="ab o" data-act="del" data-l="${list}" data-i="${i}">Delete</button></div>`;
+const LISTNEW={
+ 's.venues':()=>({title:'New venue',name:'',address:'',maps:'',photo:'',mapImg:''}),
+ 's.entourage':()=>({title:'New group',names:'',full:false}),
+ 's.dressImages':()=>({src:'',caption:''}),
+ 's.colors':()=>({name:'Color',hex:'#800020'}),
+ 's.faq':()=>({q:'New question',a:'',link:'',linkText:''})
+};
+
+function openLogin(){
+  if(sessionStorage.getItem('marga_adm')==='1'){ openAdmin(); return; }
+  modal(`<img class="sealimg" src="${ASSET.seal}" alt=""><div class="mt">Admin</div><div class="lg"><label>Username</label><input type="text" id="lgU" autocomplete="username" autocapitalize="off"><label>Password</label><input type="password" id="lgP" autocomplete="current-password">
+   <div class="err" id="lgE" style="margin-top:6px"></div><button class="btn" id="lgB">Sign in</button></div>`);
+  setTimeout(()=>{const u=$('#lgU'); if(u)u.focus()},50);
+  const go=()=>{ if($('#lgU').value.trim()===ADMIN_USER && $('#lgP').value===ADMIN_PASS){ try{sessionStorage.setItem('marga_adm','1')}catch(e){} closeModal(); openAdmin(); } else $('#lgE').textContent='Incorrect username or password.'; };
+  $('#lgB').onclick=go; $('#lgP').onkeydown=e=>{ if(e.key==='Enter') go(); };
+}
+async function openAdmin(){ await pullCloud(false); $('#admin').classList.add('show'); document.body.style.overflow='hidden'; renderAdmin(); }
+function closeAdmin(){ $('#admin').classList.remove('show'); document.body.style.overflow=''; }
+$('#monoBtn').onclick=openLogin;
+
+function renderAdmin(){
+  const T=[['guests','Guest list & seating'],['rsvps','RSVPs'],['invite','Invitation'],['venue','Venue'],['entourage','Entourage'],['dress','Dress code'],['faq','RSVP & FAQ'],['closing','Closing'],['data','Settings & data']];
+  $('#admin').innerHTML=`<div class="ad">
+    <div class="ad-head"><h2><img src="${ASSET.seal}" alt="">Admin · The ART of loving MARGA</h2><div class="row"><span class="st" id="adSt">${cloud.on?'Online sync on':'Saved on this device'}</span>
+     <button class="ab o" style="background:#fff2;color:#fff;border-color:#fff6" data-act="a-refresh">Refresh</button>
+     <button class="ab" data-act="a-view">View website</button><button class="ab o" style="background:#fff2;color:#fff;border-color:#fff6" data-act="a-logout">Log out</button></div></div>
+    <div class="tabs">${T.map(t=>`<button data-act="tab" data-t="${t[0]}" class="${tab===t[0]?'on':''}">${t[1]}</button>`).join('')}</div>
+    <div id="adBody">${adminTab()}</div></div>`;
+  if(tab==='guests') refreshComputed();
+}
+function compInputs(g,i){
+  const list=splitN(g.companions), n=Math.max(MP()-1,list.length); let o='';
+  for(let k=0;k<n;k++) o+=`<input type="text" data-comp="${i}" value="${esc(list[k]||'')}" placeholder="Guest ${k+2} (optional)">`;
+  return `<div class="comps">${o}</div>`;
+}
+function adminTab(){
+  const s=S();
+  switch(tab){
+  case 'guests': return `<div class="panel"><h3>Guest list</h3>
+    <p class="h">One row per invitation. Type the main guest, then add the other people allowed to come with them — each invitation can seat <b>2 to ${MP()}</b> people in total (set the maximum below). Seat numbers are given automatically per table, in list order. Only names listed here can RSVP.</p>
+    <div class="row" style="margin-bottom:10px"><button class="ab" data-act="add-guest">+ Add guest</button><button class="ab o" data-act="sort-guests">Sort by table</button>
+      <label class="row" style="gap:6px">Seats per table <input type="number" min="1" data-path="s.capacity" value="${esc(s.capacity)}" style="width:80px"></label>
+      <label class="row" style="gap:6px">Max guests per invitation <input type="number" min="2" max="10" data-path="s.maxParty" value="${esc(s.maxParty)}" style="width:80px"></label></div>
+    <div class="tw"><table class="t gt"><thead><tr><th>#</th><th>Main guest (full name)</th><th>Allowed to bring (full names)</th><th>Party</th><th>Table</th><th>Seat #</th><th>RSVP</th><th></th></tr></thead>
+    <tbody>${DB.guests.map((g,i)=>`<tr><td>${i+1}</td>
+      <td><input type="text" data-path="g.${i}.name" value="${esc(g.name)}" placeholder="Full name"></td>
+      <td>${compInputs(g,i)}</td>
+      <td class="c" data-cell="seats-${i}"></td>
+      <td><select data-path="g.${i}.table"><option value="">— Unassigned —</option>${TABLES.map(t=>`<option ${g.table===t?'selected':''}>${t}</option>`).join('')}</select></td>
+      <td data-cell="no-${i}"></td><td data-cell="st-${i}"></td>
+      <td><button class="x" data-act="del-guest" data-i="${i}" title="Delete">✕</button></td></tr>`).join('')||'<tr><td colspan="8" style="padding:20px;text-align:center">No guests yet — click “Add guest”.</td></tr>'}</tbody></table></div></div>
+    <div class="panel"><h3>Seating overview</h3><div class="ov" id="ov"></div></div>`;
+  case 'rsvps': return rsvpTab();
+  case 'invite': return `<div class="panel"><h3>Couple & date</h3><div class="grid2">
+    ${F('Bride – full name','s.brideFull')}${F('Groom – full name','s.groomFull')}${F('Bride – short name (cover)','s.brideShort')}${F('Groom – short name (cover)','s.groomShort')}
+    ${F('Wedding date','s.date',{type:'date'})}${F('Time (Philippine time)','s.time',{type:'time'})}</div></div>
+   <div class="panel"><h3>Invitation wording</h3>
+    ${F('Top line','s.introTop')}${F('Invitation lines','s.introLines',{area:1,rows:3})}${F('“As they begin…” lines','s.asThey',{area:1,rows:2})}
+    <div class="grid2">${F('Church / ceremony','s.church')}${F('Church location line','s.churchLoc')}${F('Reception','s.reception')}${F('Tagline on cover plate','s.plateTag')}${F('Quote','s.quote')}${F('Quote source','s.verse')}</div>
+    ${F('Countdown label','s.countdownLabel')}
+    <div class="grid2">${F('Top-right corner text (wide screens)','s.cornerTR',{area:1,rows:4})}${F('Bottom-left corner text (wide screens)','s.cornerBL',{area:1,rows:3})}</div></div>
+   <div class="panel"><h3>Cover (license plate)</h3><p class="h">Your plate picture is used by default. The glowing circle over the scooter is the clickable button — if you upload a different picture, nudge the circle’s position and size to match.</p>${IMG('Cover picture','s.coverPlate')}
+    <div class="grid2">${F('Scooter circle – distance from left (%)','s.hotX',{type:'number'})}${F('Scooter circle – distance from top (%)','s.hotY',{type:'number'})}${F('Scooter circle – size (% of width)','s.hotS',{type:'number'})}</div></div>
+   <div class="panel"><h3>Invitation page</h3>
+    <label class="fl"><span>Style</span><select data-path="s.inviteMode"><option value="image" ${s.inviteMode!=='text'?'selected':''}>Your invitation picture (exact design)</option><option value="text" ${s.inviteMode==='text'?'selected':''}>Editable text version</option></select></label>
+    <p class="h">Picture style: the names, date and venue are part of the picture, so upload a new picture if details change. The countdown always follows the date above. Text style: the wording on this tab is used instead.</p>
+    ${IMG('Invitation picture','s.inviteImg')}
+    <p class="h">Countdown box position (matches the blank box in your picture; only change if you upload a new picture):</p>
+    <div class="grid2">${F('Left (%)','s.cdX',{type:'number'})}${F('Top (%)','s.cdY',{type:'number'})}${F('Width (%)','s.cdW',{type:'number'})}${F('Height (%)','s.cdH',{type:'number'})}</div></div>`;
+  case 'venue': return `<div class="panel"><h3>Venues</h3><p class="h">Paste the Google Maps share link so guests can tap “Click to navigate”. Optionally add a venue photo and a screenshot of the map.</p>
+    ${arr(s.venues).map((v,i)=>`<div class="item">${bar('s.venues',i,s.venues.length)}<div class="grid2">${F('Heading','s.venues.'+i+'.title')}${F('Venue name','s.venues.'+i+'.name')}</div>
+      ${F('Address','s.venues.'+i+'.address',{area:1,rows:2})}${F('Google Maps link','s.venues.'+i+'.maps',{ph:'https://maps.app.goo.gl/…'})}
+      <div class="grid2">${IMG('Venue photo','s.venues.'+i+'.photo')}${IMG('Map screenshot (optional)','s.venues.'+i+'.mapImg')}</div></div>`).join('')}
+    <button class="ab" data-act="add" data-l="s.venues">+ Add venue</button></div>`;
+  case 'entourage': return `<div class="panel"><h3>Entourage</h3><p class="h">One name per line. “Full width” makes a group span both columns. Groups appear in the order shown (two per row).</p>
+    ${arr(s.entourage).map((g,i)=>`<div class="item">${bar('s.entourage',i,s.entourage.length)}${F('Group title','s.entourage.'+i+'.title')}${F('Names (one per line)','s.entourage.'+i+'.names',{area:1,rows:4})}
+      <label class="row"><input type="checkbox" data-path="s.entourage.${i}.full" ${g.full?'checked':''} style="width:auto"> Full width</label></div>`).join('')}
+    <button class="ab" data-act="add" data-l="s.entourage">+ Add group</button></div>`;
+  case 'dress': return `<div class="panel"><h3>Dress code</h3>${F('Intro text','s.dressIntro',{area:1,rows:2})}${F('Note (e.g. “Please do not wear white.”)','s.dressNote')}${F('Gift message (bottom band — clear to hide)','s.giftNote',{area:1,rows:2})}</div>
+   <div class="panel"><h3>Reference photos</h3>${arr(s.dressImages).map((im,i)=>`<div class="item">${bar('s.dressImages',i,s.dressImages.length)}${IMG('Photo','s.dressImages.'+i+'.src')}${F('Caption','s.dressImages.'+i+'.caption')}</div>`).join('')}
+    <button class="ab" data-act="add" data-l="s.dressImages">+ Add photo</button></div>
+   <div class="panel"><h3>Color palette</h3>${arr(s.colors).map((c,i)=>`<div class="item"><div class="row"><input type="color" data-path="s.colors.${i}.hex" value="${esc(c.hex)}"><input type="text" data-path="s.colors.${i}.name" value="${esc(c.name)}" style="flex:1;min-width:140px"><button class="ab o" data-act="del" data-l="s.colors" data-i="${i}">Delete</button></div></div>`).join('')}
+    <button class="ab" data-act="add" data-l="s.colors">+ Add color</button></div>`;
+  case 'faq': return `<div class="panel"><h3>RSVP section</h3>${F('Intro text','s.rsvpIntro',{area:1,rows:3})}${F('RSVP deadline (shown on the page and in the FAQ as {deadline})','s.rsvpDeadline',{ph:'e.g. November 28, 2026'})}</div>
+   <div class="panel"><h3>FAQ</h3><p class="h">You can use {deadline}, {time}, {date}, {church} and {reception} inside answers — they fill in automatically. “Link to” turns the FAQ into a button that scrolls to that page.</p>
+    ${arr(s.faq).map((f,i)=>`<div class="item">${bar('s.faq',i,s.faq.length)}${F('Question','s.faq.'+i+'.q')}${F('Answer','s.faq.'+i+'.a',{area:1,rows:3})}
+      <div class="grid2"><label class="fl"><span>Link to</span><select data-path="s.faq.${i}.link">${[['','— none —'],['venue','Venue'],['dress','Dress code'],['rsvp','RSVP'],['entourage','Entourage'],['invite','Invitation']].map(o=>`<option value="${o[0]}" ${f.link===o[0]?'selected':''}>${o[1]}</option>`).join('')}</select></label>${F('Link button text','s.faq.'+i+'.linkText')}</div></div>`).join('')}
+    <button class="ab" data-act="add" data-l="s.faq">+ Add question</button></div>`;
+  case 'closing': return `<div class="panel"><h3>Sweet message</h3>${F('Message','s.closing',{area:1,rows:6})}</div>`;
+  case 'data': return `<div class="panel"><h3>Backup</h3>
+    <p class="h">Keep a copy of your guest list and page content in case something is changed by mistake. To show your latest edits to guests, click “Copy publish data” and paste it over <code>null</code> in <code>const EMBEDDED = null;</code> in the HTML file before uploading.</p>
+    <div class="row"><button class="ab" data-act="copy-embed">Copy publish data</button><button class="ab o" data-act="export-json">Download backup (.json)</button>
+     <label class="ab o" style="cursor:pointer">Restore backup<input type="file" accept=".json" id="impFile" style="display:none"></label></div></div>
+   <div class="panel"><h3>Danger zone</h3><div class="row"><button class="ab o" data-act="reset-rsvps">Clear all RSVPs</button><button class="ab o" data-act="reset-all">Reset everything to defaults</button></div></div>`;
+  }
+}
+function rsvpRows(){
+  const SM=seatMap(), ti=t=>t?TABLES.indexOf(t):99, rows=[];
+  DB.guests.forEach(g=>members(g).forEach(m=>rows.push({m,g,r:DB.rsvps[m.key],s:SM[m.key]})));
+  rows.sort((a,b)=>(ti(a.s?.table)-ti(b.s?.table))||((a.s?.seat||0)-(b.s?.seat||0)));
+  return rows;
+}
+let rFilter='all';
+function rsvpTab(){
+  const rows=rsvpRows(), y=rows.filter(x=>x.r&&x.r.attending==='yes').length, n=rows.filter(x=>x.r&&x.r.attending==='no').length, p=rows.length-y-n;
+  const vis=rows.filter(x=>rFilter==='all'||(rFilter==='pending'?!x.r:(x.r&&x.r.attending===rFilter)));
+  return `<div class="panel"><h3>RSVP tracker</h3>
+   <div class="sumrow"><div><b>${y}</b>attending</div><div><b>${n}</b>declined</div><div><b>${p}</b>no response</div><div><b>${rows.length}</b>seats invited</div></div>
+   <div class="row" style="margin-bottom:10px"><select id="rFil" style="width:auto"><option value="all">All guests</option><option value="yes">Attending</option><option value="no">Declined</option><option value="pending">No response</option></select>
+    <button class="ab" data-act="export-csv">Download CSV</button></div>
+   <div class="tw"><table class="t"><thead><tr><th>Table</th><th>Seat</th><th>Guest</th><th>Response</th><th>Email</th><th>Responded by</th><th>Date</th><th></th></tr></thead><tbody>
+   ${vis.map(x=>`<tr><td>${esc(x.s?.table||'—')}</td><td>${x.s?x.s.seat:'—'}</td><td><b>${esc(x.m.name)}</b></td>
+     <td>${x.r?`<span class="pill ${x.r.attending==='yes'?'y':'n'}">${x.r.attending==='yes'?'Attending':'Declined'}</span>`:'<span class="pill p">Pending</span>'}</td>
+     <td>${esc(x.r?.email||'')}</td><td>${x.r?(norm(x.r.by)===norm(x.m.name)?'Self':esc(x.r.by)):''}</td><td>${x.r?dateStr(x.r.at):''}</td>
+     <td>${x.r?`<button class="x" data-act="reset-rsvp" data-k="${esc(x.m.key)}" title="Reset this RSVP">↺</button>`:''}</td></tr>`).join('')||'<tr><td colspan="8" style="padding:20px;text-align:center">Nothing to show.</td></tr>'}
+   </tbody></table></div></div>
+   <div class="panel"><h3>Not on the guest list (attempted RSVPs)</h3>
+   ${DB.attempts.length?`<div class="tw"><table class="t" style="min-width:520px"><thead><tr><th>Name entered</th><th>Email</th><th>Date</th></tr></thead><tbody>${DB.attempts.slice().reverse().map(a=>`<tr><td>${esc(a.name)}</td><td>${esc(a.email)}</td><td>${dateStr(a.at)}</td></tr>`).join('')}</tbody></table></div>`:'<p class="h">None yet.</p>'}</div>`;
+}
+function refreshComputed(){
+  const SM=seatMap();
+  DB.guests.forEach((g,i)=>{
+    const ms=members(g), set=(k,v)=>{const el=$(`[data-cell="${k}-${i}"]`); if(el) el.innerHTML=v;};
+    set('seats',`<span style="${ms.length>MP()?'color:#c0303f;font-weight:700':''}">${ms.length} / ${MP()}</span>`);
+    set('no',g.table?ms.map(m=>SM[m.key]?.seat).join(', '):'—');
+    const yes=ms.filter(m=>DB.rsvps[m.key]?.attending==='yes').length, no=ms.filter(m=>DB.rsvps[m.key]?.attending==='no').length;
+    set('st',`<span class="pill ${yes?'y':(no===ms.length&&no?'n':'p')}">${yes}/${ms.length} attending</span>`);
+  });
+  const cap=Number(S().capacity)||10, ov=$('#ov'); if(!ov) return;
+  const cnt={},conf={}; DB.guests.forEach(g=>{ if(!g.table) return; members(g).forEach(m=>{cnt[g.table]=(cnt[g.table]||0)+1; if(DB.rsvps[m.key]?.attending==='yes')conf[g.table]=(conf[g.table]||0)+1;}); });
+  const un=DB.guests.filter(g=>!g.table).reduce((a,g)=>a+members(g).length,0);
+  ov.innerHTML=TABLES.map(t=>`<div class="${(cnt[t]||0)>cap?'over':''}"><b>${t}</b>${cnt[t]||0} / ${cap} seats · ${conf[t]||0} confirmed</div>`).join('')+(un?`<div><b>Unassigned</b>${un} seat(s)</div>`:'');
+}
+function download(name,text,type){ const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([text],{type})); a.download=name; document.body.appendChild(a); a.click(); a.remove(); }
+function readImg(file,max=1100){
+  return new Promise(res=>{ const r=new FileReader(); r.onload=()=>{ const im=new Image(); im.onload=()=>{ const k=Math.min(1,max/Math.max(im.width,im.height)); const c=document.createElement('canvas'); c.width=Math.round(im.width*k); c.height=Math.round(im.height*k); const x=c.getContext('2d'); x.fillStyle='#fff'; x.fillRect(0,0,c.width,c.height); x.drawImage(im,0,0,c.width,c.height); res(c.toDataURL('image/jpeg',.82)); }; im.src=r.result; }; r.readAsDataURL(file); });
+}
+const admin=$('#admin');
+admin.addEventListener('input',e=>{
+  const t=e.target;
+  if(t.dataset.comp!==undefined){
+    const i=+t.dataset.comp, g=DB.guests[i]; if(!g) return;
+    g.companions=$$(`[data-comp="${i}"]`,admin).map(x=>x.value.replace(/[,;]/g,' ').trim()).filter(Boolean).join(', ');
+    persist('g'); refreshComputed(); return;
+  }
+  const p=t.dataset.path; if(!p) return;
+  let v=t.type==='checkbox'?t.checked:(t.type==='number'?Number(t.value):t.value);
+  setPath(p,v);
+  const k=p[0]==='g'?'g':'s'; persist(k);
+  if(k==='g'||p==='s.capacity'||p==='s.maxParty') refreshComputed();
+});
+admin.addEventListener('change',async e=>{
+  const t=e.target;
+  if(t.dataset.path==='s.maxParty'){ $('#adBody').innerHTML=adminTab(); refreshComputed(); return; }
+  if(t.id==='rFil'){ rFilter=t.value; $('#adBody').innerHTML=adminTab(); $('#rFil').value=rFilter; return; }
+  if(t.id==='impFile'&&t.files[0]){
+    try{ const d=JSON.parse(await t.files[0].text()); DB.settings=normDB(d,false).settings; DB.guests=normDB(d,false).guests; persist('all',true); renderAdmin(); }catch(x){ alert('That file could not be read.'); }
+    return;
+  }
+  if(t.dataset.img&&t.files[0]){ setPath(t.dataset.img,await readImg(t.files[0], t.dataset.img==='s.coverImg'?700:1100)); persist('s',true); $('#adBody').innerHTML=adminTab(); }
+});
+admin.addEventListener('click',async e=>{
+  const b=e.target.closest('[data-act]'); if(!b) return;
+  const a=b.dataset.act, rerender=()=>{ $('#adBody').innerHTML=adminTab(); if(tab==='guests') refreshComputed(); };
+  const L=b.dataset.l?getPath(b.dataset.l):null, i=+b.dataset.i;
+  switch(a){
+   case 'tab': tab=b.dataset.t; renderAdmin(); break;
+   case 'a-view': closeAdmin(); break;
+   case 'a-logout': try{sessionStorage.removeItem('marga_adm')}catch(x){} closeAdmin(); break;
+   case 'a-refresh': await pullCloud(false); rerender(); break;
+   case 'add-guest': DB.guests.push({id:uid(),name:'',companions:'',table:''}); persist('g',true); rerender(); break;
+   case 'del-guest': if(confirm('Delete this guest row?')){ DB.guests.splice(i,1); persist('g',true); rerender(); } break;
+   case 'sort-guests': { const ti=t=>t?TABLES.indexOf(t):99; DB.guests.sort((x,y)=>ti(x.table)-ti(y.table)); persist('g',true); rerender(); break; }
+   case 'add': L.push(LISTNEW[b.dataset.l]()); persist('s',true); rerender(); break;
+   case 'del': if(confirm('Delete this item?')){ L.splice(i,1); persist('s',true); rerender(); } break;
+   case 'up': if(i>0){ [L[i-1],L[i]]=[L[i],L[i-1]]; persist('s',true); rerender(); } break;
+   case 'down': if(i<L.length-1){ [L[i+1],L[i]]=[L[i],L[i+1]]; persist('s',true); rerender(); } break;
+   case 'clear-img': setPath(b.dataset.p,''); persist('s',true); rerender(); break;
+   case 'reset-rsvp': { const k=b.dataset.k; delete DB.rsvps[k]; saveRsvpLocal(); if(cloud.on){ try{await cloud.del('rsvps/'+k)}catch(x){} } rerender(); break; }
+   case 'reset-rsvps': if(confirm('Clear ALL RSVPs? This cannot be undone.')){ DB.rsvps={}; DB.attempts=[]; saveRsvpLocal(); if(cloud.on){ try{await cloud.del('rsvps'); await cloud.del('attempts')}catch(x){} } rerender(); } break;
+   case 'reset-all': if(confirm('Reset all content and the guest list to the defaults?')){ const n=normDB(null,true); DB.settings=n.settings; DB.guests=n.guests; persist('all',true); renderAdmin(); } break;
+   case 'push-all': if(!cloud.on){ alert('Online sync is not set up yet. Add your Firebase URL to CLOUD_URL first.'); } else { persist('all',true); alert('Sent. Open the site on another device to confirm it loads your edits.'); } break;
+   case 'export-json': download('wedding-backup.json',JSON.stringify({settings:DB.settings,guests:DB.guests},null,1),'application/json'); break;
+   case 'copy-embed': { const txt=JSON.stringify({settings:DB.settings,guests:DB.guests}); try{ await navigator.clipboard.writeText(txt); b.textContent='Copied ✓'; }catch(x){ prompt('Copy this text:',txt); } break; }
+   case 'export-csv': {
+     const q=v=>`"${String(v??'').replace(/"/g,'""')}"`, lines=[['Table','Seat','Guest','Response','Email','Responded by','Date'].map(q).join(',')];
+     rsvpRows().forEach(x=>lines.push([x.s?.table||'',x.s?.seat||'',x.m.name,x.r?(x.r.attending==='yes'?'Attending':'Declined'):'Pending',x.r?.email||'',x.r?(norm(x.r.by)===norm(x.m.name)?'Self':x.r.by):'',x.r?dateStr(x.r.at):''].map(q).join(',')));
+     download('rsvp-list.csv',lines.join('\n'),'text/csv'); break; }
+  }
+});
+
+/* scroll progress + active nav link */
+const NAVSEC=['invite','venue','entourage','dress','rsvp','faq'];
+let spy=false;
+function onScroll(){ if(spy) return; spy=true; requestAnimationFrame(()=>{ spy=false;
+  const d=document.documentElement, mx=d.scrollHeight-innerHeight; $('#prog').style.transform=`scaleX(${mx>0?Math.min(1,scrollY/mx):0})`;
+  let cur=''; NAVSEC.forEach(id=>{ const el=document.getElementById(id); if(el&&el.getBoundingClientRect().top<innerHeight*.45) cur=id; });
+  $$('#nav a').forEach(a=>a.classList.toggle('on',a.dataset.go===cur)); document.body.classList.toggle('on-invite',cur==='invite'||cur===''); }); }
+addEventListener('scroll',onScroll,{passive:true}); setTimeout(onScroll,1300); addEventListener('resize',onScroll);
+
+/* ---------- boot ---------- */
+$('.amb.tl').style.backgroundImage=`url("${ASSET.flTL}")`;
+$('.amb.br').style.backgroundImage=`url("${ASSET.flBR}")`;
+$('#monoBtn').style.backgroundImage=`url("${ASSET.seal}")`;
+loadInitial();
+renderSite();
+let opened=false; try{ opened=sessionStorage.getItem('marga_open')==='1'; }catch(e){}
+if(opened){ $('#cover').style.display='none'; document.body.classList.remove('lock'); document.body.classList.add('opened'); }
+observe();
+pullCloud(true).then(()=>{ if(cloud.on) renderSite(); });
+</script>
+</body>
+</html>
