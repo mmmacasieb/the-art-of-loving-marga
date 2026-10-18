@@ -408,7 +408,8 @@ const ADMIN_USER = "SV", ADMIN_PASS = "SV2026";
 /* ===================================================================== */
 
 const ASSET = {"plate": "assets/file-7-525706.jpg", "invite": "assets/file-8-a059c7.jpg", "seal": "assets/file-1-a44c41.png", "flTL": "assets/file-9-76f1b6.jpg", "flBR": "assets/file-10-d2fa62.jpg"};
-const TABLES = ["VIP 1","VIP 2","Table 1","Table 2","Table 3","Table 4","Table 5","Table 6","Table 7","Table 8"];
+const DEFAULT_TABLES = ["VIP 1","VIP 2","Table 1","Table 2","Table 3","Table 4","Table 5","Table 6","Table 7","Table 8"];
+const TBL = () => { const t = (DB && DB.settings && DB.settings.tables); const a = Array.isArray(t) ? t : (t && typeof t==='object' ? Object.values(t) : []); return a.length ? a : DEFAULT_TABLES; };
 const LS = "marga_wedding_v2", LS_R = "marga_wedding_rsvps_v2";
 const $ = (s,r=document)=>r.querySelector(s), $$ = (s,r=document)=>[...r.querySelectorAll(s)];
 const arr = x => Array.isArray(x) ? x.filter(v=>v!=null) : (x && typeof x==='object' ? Object.values(x) : []);
@@ -859,10 +860,14 @@ function adminTab(){
       <td><input type="text" data-path="g.${i}.name" value="${esc(g.name)}" placeholder="Full name"></td>
       <td>${compInputs(g,i)}</td>
       <td class="c" data-cell="seats-${i}"></td>
-      <td><select data-path="g.${i}.table"><option value="">— Unassigned —</option>${TABLES.map(t=>`<option ${g.table===t?'selected':''}>${t}</option>`).join('')}</select></td>
+      <td><select data-path="g.${i}.table"><option value="">— Unassigned —</option>${TBL().map(t=>`<option ${g.table===t?'selected':''}>${t}</option>`).join('')}</select></td>
       <td data-cell="no-${i}"></td><td data-cell="st-${i}"></td>
       <td><button class="x" data-act="del-guest" data-i="${i}" title="Delete">✕</button></td></tr>`).join('')||'<tr><td colspan="8" style="padding:20px;text-align:center">No guests yet — click “Add guest”.</td></tr>'}</tbody></table></div></div>
-    <div class="panel"><h3>Seating overview</h3><div class="ov" id="ov"></div></div>`;
+        <div class="panel"><h3>Seating overview</h3><div class="ov" id="ov"></div></div>
+    <div class="panel"><h3>Manage tables</h3>
+      <p class="h">Add a new table or delete one. Deleting a table moves its guests back to “Unassigned”.</p>
+      <div class="row" style="margin-bottom:12px"><input type="text" id="newTbl" placeholder="New table name (e.g. Table 9)" style="max-width:260px"><button class="ab" data-act="add-table">+ Add table</button></div>
+      <div class="ov">${TBL().map((t,i)=>`<div><b>${esc(t)}</b><button class="ab o" style="margin-top:6px;padding:5px 10px" data-act="del-table" data-i="${i}">Delete</button></div>`).join('')}</div></div>`;
   case 'rsvps': return rsvpTab();
   case 'invite': return `<div class="panel"><h3>Couple & date</h3><div class="grid2">
     ${F('Bride – full name','s.brideFull')}${F('Groom – full name','s.groomFull')}${F('Bride – short name (cover)','s.brideShort')}${F('Groom – short name (cover)','s.groomShort')}
@@ -908,7 +913,7 @@ function adminTab(){
   }
 }
 function rsvpRows(){
-  const SM=seatMap(), ti=t=>t?TABLES.indexOf(t):99, rows=[];
+  const SM=seatMap(), ti=t=>t?TBL().indexOf(t):99, rows=[];
   DB.guests.forEach(g=>members(g).forEach(m=>rows.push({m,g,r:DB.rsvps[m.key],s:SM[m.key]})));
   rows.sort((a,b)=>(ti(a.s?.table)-ti(b.s?.table))||((a.s?.seat||0)-(b.s?.seat||0)));
   return rows;
@@ -942,7 +947,7 @@ function refreshComputed(){
   const cap=Number(S().capacity)||10, ov=$('#ov'); if(!ov) return;
   const cnt={},conf={}; DB.guests.forEach(g=>{ if(!g.table) return; members(g).forEach(m=>{cnt[g.table]=(cnt[g.table]||0)+1; if(DB.rsvps[m.key]?.attending==='yes')conf[g.table]=(conf[g.table]||0)+1;}); });
   const un=DB.guests.filter(g=>!g.table).reduce((a,g)=>a+members(g).length,0);
-  ov.innerHTML=TABLES.map(t=>`<div class="${(cnt[t]||0)>cap?'over':''}"><b>${t}</b>${cnt[t]||0} / ${cap} seats · ${conf[t]||0} confirmed</div>`).join('')+(un?`<div><b>Unassigned</b>${un} seat(s)</div>`:'');
+  ov.innerHTML=TBL().map(t=>`<div class="${(cnt[t]||0)>cap?'over':''}"><b>${t}</b>${cnt[t]||0} / ${cap} seats · ${conf[t]||0} confirmed</div>`).join('')+(un?`<div><b>Unassigned</b>${un} seat(s)</div>`:'');
 }
 function download(name,text,type){ const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([text],{type})); a.download=name; document.body.appendChild(a); a.click(); a.remove(); }
 function readImg(file,max=1100){
@@ -977,13 +982,15 @@ admin.addEventListener('click',async e=>{
   const a=b.dataset.act, rerender=()=>{ $('#adBody').innerHTML=adminTab(); if(tab==='guests') refreshComputed(); };
   const L=b.dataset.l?getPath(b.dataset.l):null, i=+b.dataset.i;
   switch(a){
+    case 'add-table': { const nm=($('#newTbl').value||'').trim(); if(!nm) break; const T=TBL().slice(); if(T.some(t=>t.toLowerCase()===nm.toLowerCase())){ alert('That table already exists.'); break; } T.push(nm); S().tables=T; persist('s',true); rerender(); break; }
+   case 'del-table': { const T=TBL().slice(), nm=T[i], n=DB.guests.filter(g=>g.table===nm).length; if(T.length<=1){ alert('You need at least one table.'); break; } if(confirm('Delete "'+nm+'"?'+(n?' '+n+' guest row(s) will become Unassigned.':''))){ DB.guests.forEach(g=>{ if(g.table===nm) g.table=''; }); T.splice(i,1); S().tables=T; persist('all',true); rerender(); } break; }
    case 'tab': tab=b.dataset.t; renderAdmin(); break;
    case 'a-view': closeAdmin(); break;
    case 'a-logout': try{sessionStorage.removeItem('marga_adm')}catch(x){} closeAdmin(); break;
    case 'a-refresh': await pullCloud(false); rerender(); break;
    case 'add-guest': DB.guests.push({id:uid(),name:'',companions:'',table:''}); persist('g',true); rerender(); break;
    case 'del-guest': if(confirm('Delete this guest row?')){ DB.guests.splice(i,1); persist('g',true); rerender(); } break;
-   case 'sort-guests': { const ti=t=>t?TABLES.indexOf(t):99; DB.guests.sort((x,y)=>ti(x.table)-ti(y.table)); persist('g',true); rerender(); break; }
+   case 'sort-guests': { const ti=t=>t?TBL().indexOf(t):99; DB.guests.sort((x,y)=>ti(x.table)-ti(y.table)); persist('g',true); rerender(); break; }
    case 'add': L.push(LISTNEW[b.dataset.l]()); persist('s',true); rerender(); break;
    case 'del': if(confirm('Delete this item?')){ L.splice(i,1); persist('s',true); rerender(); } break;
    case 'up': if(i>0){ [L[i-1],L[i]]=[L[i],L[i-1]]; persist('s',true); rerender(); } break;
